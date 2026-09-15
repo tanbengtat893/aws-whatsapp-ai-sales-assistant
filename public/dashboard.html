@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sales Assistant - Rep Dashboard</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: #eef2f0; color: #1a2027; }
+
+    header {
+      background: #075e54; color: #fff; padding: 14px 22px;
+      display: flex; align-items: center; gap: 16px;
+    }
+    header h1 { font-size: 17px; margin: 0; font-weight: 700; }
+    header .spacer { flex: 1; }
+    header a { color: #cfeee8; text-decoration: none; font-size: 13px; }
+    header .summary { color: #bfe6dd; font-size: 12px; }
+
+    .wrap {
+      max-width: 1180px; margin: 22px auto; padding: 0 18px;
+      display: grid; grid-template-columns: 1.5fr 1fr; gap: 18px;
+    }
+    .panel { background: #fff; border: 1px solid #e4e8ec; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.04); }
+    .panel-head { display: flex; align-items: center; padding: 14px 18px; border-bottom: 1px solid #eef1f4; }
+    .panel-head h2 { font-size: 15px; margin: 0; font-weight: 700; }
+    .panel-head .spacer { flex: 1; }
+    .btn-outline { padding: 6px 14px; border: 1px solid #cfd6dd; border-radius: 8px; font-size: 13px; background: #fff; cursor: pointer; color: #37474f; }
+    .btn-outline:hover { background: #f4f6f8; }
+
+    .toolbar { padding: 12px 18px; display: flex; gap: 10px; align-items: center; font-size: 13px; border-bottom: 1px solid #eef1f4; }
+    .toolbar label { color: #55606b; }
+    .toolbar select { padding: 6px 10px; border: 1px solid #cfd6dd; border-radius: 8px; font-size: 13px; background: #fff; cursor: pointer; }
+    .toolbar .muted { color: #99a6ad; margin-left: auto; font-size: 12px; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { text-align: left; padding: 11px 18px; border-bottom: 1px solid #f0f2f5; vertical-align: middle; }
+    th { color: #8795a1; font-weight: 600; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; }
+    tr.row { cursor: pointer; }
+    tr.row:hover { background: #f7fafc; }
+    tr.row.selected { background: #eaf5f1; }
+    .badge { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; white-space: nowrap; }
+    .badge.auto_answered { background: #e3f6e8; color: #1b7a3d; }
+    .badge.pending { background: #ffe4d1; color: #b1520a; }
+    .badge.assigned { background: #efe0ff; color: #6b28c4; }
+    .badge.in_progress { background: #d9e8ff; color: #1f5fb8; }
+    .badge.resolved { background: #e5e9ee; color: #55606b; }
+    .lang { text-transform: uppercase; font-size: 11px; color: #667; }
+    .from-cell { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: #37474f; }
+    .empty { padding: 28px 18px; color: #889; font-size: 13px; text-align: center; }
+
+    /* Pagination */
+    .pager { display: flex; align-items: center; gap: 6px; padding: 12px 18px; font-size: 13px; color: #55606b; }
+    .pager .spacer { flex: 1; }
+    .pager button { min-width: 30px; height: 30px; border: 1px solid #dfe4e8; background: #fff; border-radius: 7px; cursor: pointer; font-size: 13px; color: #37474f; }
+    .pager button.active { background: #075e54; color: #fff; border-color: #075e54; }
+    .pager button:disabled { opacity: 0.4; cursor: default; }
+
+    /* Detail panel */
+    .detail { padding: 18px; font-size: 14px; }
+    .detail-grid { display: grid; grid-template-columns: 1fr 1fr auto; gap: 12px; margin-bottom: 16px; }
+    .detail-grid label { display: block; font-size: 10.5px; color: #8795a1; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 3px; }
+    .detail-grid .val { font-size: 13px; }
+    .detail-grid .from-cell { font-size: 12px; }
+    .detail h3 { font-size: 12px; color: #55606b; text-transform: uppercase; letter-spacing: 0.04em; margin: 18px 0 8px; }
+    .conv { display: flex; flex-direction: column; gap: 8px; }
+    .cbubble { max-width: 88%; padding: 9px 12px; border-radius: 12px; font-size: 13px; line-height: 1.45; white-space: pre-wrap; word-wrap: break-word; }
+    .cbubble.cust { align-self: flex-end; background: #d9fdd3; border-bottom-right-radius: 3px; }
+    .cbubble.ai { align-self: flex-start; background: #f2f5f7; border: 1px solid #e7ecef; border-bottom-left-radius: 3px; }
+    .cbubble.rep { align-self: flex-start; background: #e7f0ff; border: 1px solid #cfe0fb; border-bottom-left-radius: 3px; }
+    .cbubble.rep .who { color: #1f5fb8; }
+    .cbubble .cmeta { font-size: 10px; color: #8a9a95; margin-top: 4px; text-align: right; }
+    .cbubble .who { font-size: 10.5px; color: #667; font-weight: 600; margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.03em; }
+
+    .nextstep { margin-top: 20px; }
+    .nextstep p { color: #55606b; font-size: 13px; margin: 0 0 12px; }
+    .assign-row { display: flex; flex-direction: column; gap: 8px; }
+    .assign-row input { padding: 9px 11px; border: 1px solid #cfd6dd; border-radius: 8px; font-size: 13px; }
+    .assign-btn {
+      background: #075e54; color: #fff; border: none; border-radius: 9px; padding: 12px 16px;
+      font-size: 14px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .assign-btn:hover { background: #0a6d61; }
+    .assign-btn:disabled { opacity: 0.5; cursor: default; }
+    .reply-row { display: flex; flex-direction: column; gap: 8px; }
+    .reply-row input, .reply-row textarea { padding: 9px 11px; border: 1px solid #cfd6dd; border-radius: 8px; font-size: 13px; font-family: inherit; resize: vertical; }
+    .reply-btn {
+      background: #128c7e; color: #fff; border: none; border-radius: 9px; padding: 12px 16px;
+      font-size: 14px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .reply-btn:hover { background: #0f7568; }
+    .reply-btn:disabled { opacity: 0.5; cursor: default; }
+    .reason { color: #b1520a; font-weight: 600; }
+    .muted { color: #99a6ad; font-size: 12px; }
+    .placeholder { color: #99a6ad; font-size: 13px; padding: 8px 0; }
+
+    @media (max-width: 860px) { .wrap { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rep Dashboard (Admin)</h1>
+    <span class="summary" id="summary"></span>
+    <span class="spacer"></span>
+    <a href="/chat.html">&larr; Customer chat</a>
+  </header>
+
+  <div class="wrap">
+    <!-- Enquiries -->
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Enquiries</h2>
+        <span class="spacer"></span>
+        <button class="btn-outline" id="clearHistory" title="Remove resolved / auto-answered items. Active enquiries are always kept.">&#128465; Clear history</button>
+        <button class="btn-outline" id="refresh">Filter</button>
+      </div>
+      <div class="toolbar">
+        <label for="filter">Status</label>
+        <select id="filter">
+          <option value="needs_attention" selected>Needs attention</option>
+          <option value="">All</option>
+          <option value="pending">Pending / escalated</option>
+          <option value="assigned">Assigned</option>
+          <option value="in_progress">In progress</option>
+          <option value="auto_answered">Auto-answered</option>
+          <option value="resolved">Resolved</option>
+        </select>
+        <label for="repFilter">Rep</label>
+        <select id="repFilter">
+          <option value="">All reps</option>
+        </select>
+        <span class="muted" id="lastUpdated"></span>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Time</th><th>From</th><th>Status</th><th>Assigned</th><th>Message</th></tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <div class="empty" id="emptyState" style="display:none;">No enquiries yet. Try the customer chat.</div>
+      <div class="pager" id="pager"></div>
+    </div>
+
+    <!-- Detail -->
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Detail</h2>
+        <span class="spacer"></span>
+        <span class="badge" id="detailBadge" style="display:none;"></span>
+      </div>
+      <div class="detail" id="detail">
+        <div class="placeholder">Select an enquiry to see details.</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const rowsEl = document.getElementById('rows');
+    const emptyEl = document.getElementById('emptyState');
+    const filterEl = document.getElementById('filter');
+    const repFilterEl = document.getElementById('repFilter');
+    const detailEl = document.getElementById('detail');
+    const detailBadge = document.getElementById('detailBadge');
+    const summaryEl = document.getElementById('summary');
+    const lastUpdatedEl = document.getElementById('lastUpdated');
+    const pagerEl = document.getElementById('pager');
+
+    let selectedId = null;
+    let allItems = [];
+    let page = 1;
+    const PAGE_SIZE = 5;
+
+    function fmtTime(iso) {
+      if (!iso) return '';
+      const d = new Date(iso);
+      return d.toLocaleString([], { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+    }
+    function fmtClock(iso) {
+      if (!iso) return '';
+      return new Date(iso).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    }
+    function truncate(s, n) { s = s || ''; return s.length > n ? s.slice(0, n) + '\u2026' : s; }
+    function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
+
+    async function loadList() {
+      const status = filterEl.value;
+      const rep = repFilterEl.value;
+      const params = [];
+      if (status) params.push('status=' + encodeURIComponent(status));
+      if (rep) params.push('assignedTo=' + encodeURIComponent(rep));
+      const url = '/api/enquiries' + (params.length ? '?' + params.join('&') : '');
+      const res = await fetch(url);
+      const data = await res.json();
+      allItems = data.enquiries || [];
+
+      // Populate the rep dropdown once from the roster the API returns.
+      if (data.reps && !repFilterEl.dataset.filled) {
+        for (const r of data.reps) {
+          const opt = document.createElement('option');
+          opt.value = r; opt.textContent = r;
+          repFilterEl.appendChild(opt);
+        }
+        repFilterEl.dataset.filled = '1';
+        window.REP_ROSTER = data.reps;
+      }
+
+      const pending = allItems.filter((e) => e.status === 'pending').length;
+      summaryEl.textContent = data.count + ' enquiries \u00b7 ' + pending + ' need attention';
+      lastUpdatedEl.textContent = 'Updated ' + new Date().toLocaleTimeString();
+
+      const maxPage = Math.max(1, Math.ceil(allItems.length / PAGE_SIZE));
+      if (page > maxPage) page = maxPage;
+      renderPage();
+    }
+
+    function renderPage() {
+      rowsEl.innerHTML = '';
+      emptyEl.style.display = allItems.length ? 'none' : 'block';
+
+      const start = (page - 1) * PAGE_SIZE;
+      const pageItems = allItems.slice(start, start + PAGE_SIZE);
+
+      for (const e of pageItems) {
+        const tr = document.createElement('tr');
+        tr.className = 'row' + (e.id === selectedId ? ' selected' : '');
+        tr.innerHTML =
+          '<td>' + fmtTime(e.receivedAt) + '</td>' +
+          '<td class="from-cell">' + esc(e.from || '') + '</td>' +
+          '<td><span class="badge ' + e.status + '">' + e.status.replace('_', ' ') + '</span>' +
+          (e.escalationReason ? ' <span class="reason">(' + esc(e.escalationReason) + ')</span>' : '') + '</td>' +
+          '<td class="muted">' + (e.assignedTo ? esc(e.assignedTo) : '\u2014') + '</td>' +
+          '<td>' + esc(truncate(e.text, 30)) + '</td>';
+        tr.addEventListener('click', () => loadDetail(e.id));
+        rowsEl.appendChild(tr);
+      }
+      renderPager();
+    }
+
+    function renderPager() {
+      pagerEl.innerHTML = '';
+      const total = allItems.length;
+      if (total === 0) return;
+      const maxPage = Math.ceil(total / PAGE_SIZE);
+      const start = (page - 1) * PAGE_SIZE + 1;
+      const end = Math.min(page * PAGE_SIZE, total);
+
+      const label = document.createElement('span');
+      label.textContent = 'Showing ' + start + '-' + end + ' of ' + total;
+      pagerEl.appendChild(label);
+
+      const spacer = document.createElement('span');
+      spacer.className = 'spacer';
+      pagerEl.appendChild(spacer);
+
+      const prev = document.createElement('button');
+      prev.innerHTML = '&lsaquo;';
+      prev.disabled = page <= 1;
+      prev.addEventListener('click', () => { page--; renderPage(); });
+      pagerEl.appendChild(prev);
+
+      // Page numbers: show up to 3 around current, first and last with ellipsis.
+      const pages = new Set([1, maxPage, page, page - 1, page + 1]);
+      const sorted = [...pages].filter((p) => p >= 1 && p <= maxPage).sort((a, b) => a - b);
+      let last = 0;
+      for (const p of sorted) {
+        if (p - last > 1) {
+          const dots = document.createElement('span');
+          dots.textContent = '\u2026';
+          pagerEl.appendChild(dots);
+        }
+        const b = document.createElement('button');
+        b.textContent = p;
+        if (p === page) b.className = 'active';
+        b.addEventListener('click', () => { page = p; renderPage(); });
+        pagerEl.appendChild(b);
+        last = p;
+      }
+
+      const next = document.createElement('button');
+      next.innerHTML = '&rsaquo;';
+      next.disabled = page >= maxPage;
+      next.addEventListener('click', () => { page++; renderPage(); });
+      pagerEl.appendChild(next);
+    }
+
+    async function loadDetail(id) {
+      selectedId = id;
+      renderPage(); // refresh row highlight
+      const res = await fetch('/api/enquiries/' + encodeURIComponent(id));
+      if (!res.ok) { detailEl.innerHTML = '<div class="placeholder">Enquiry not found.</div>'; return; }
+      const { enquiry: e } = await res.json();
+
+      // Status badge in the panel head.
+      detailBadge.style.display = 'inline-block';
+      detailBadge.className = 'badge ' + e.status;
+      detailBadge.textContent = e.status.replace('_', ' ');
+
+      let html = '';
+      // Top meta grid: From / Time / Lang.
+      html += '<div class="detail-grid">' +
+        '<div><label>From</label><div class="val from-cell">' + esc(e.from || '') + '</div></div>' +
+        '<div><label>Time</label><div class="val">' + fmtTime(e.receivedAt) + '</div></div>' +
+        '<div><label>Lang</label><div class="val lang">' + esc(e.language || '-') + '</div></div>' +
+        '</div>';
+
+      // Conversation: customer message + AI assistant reply + any rep replies.
+      html += '<h3>Conversation</h3><div class="conv">';
+      html += '<div class="cbubble cust">' + esc(e.text || '') +
+        '<div class="cmeta">' + fmtClock(e.receivedAt) + '</div></div>';
+      if (e.reply) {
+        html += '<div class="cbubble ai"><div class="who">AI Assistant</div>' + esc(e.reply) +
+          '<div class="cmeta">' + fmtClock(e.receivedAt) + '</div></div>';
+      }
+      // Append any rep→customer replies sent in this customer's thread.
+      try {
+        const mres = await fetch('/api/messages/' + encodeURIComponent(e.from));
+        if (mres.ok) {
+          const { messages } = await mres.json();
+          for (const m of messages || []) {
+            html += '<div class="cbubble rep"><div class="who">' + esc(m.repName || 'Sales Rep') + ' (human)</div>' +
+              esc(m.text) + '<div class="cmeta">' + fmtClock(m.sentAt) + '</div></div>';
+          }
+        }
+      } catch (err) { /* non-fatal */ }
+      html += '</div>';
+
+      if (e.escalation) {
+        html += '<h3>Escalation</h3><div class="reason">' + esc(e.escalation.reason) + '</div>';
+      }
+      if (e.matchedFaqId) {
+        html += '<div class="muted" style="margin-top:8px;">Matched FAQ: ' + esc(e.matchedFaqId) + '</div>';
+      }
+
+      // Assign to a sales rep (pending -> assigned). Shown while the enquiry is
+      // not yet resolved. The customer is notified who will assist them.
+      const reps = window.REP_ROSTER || ['Noel', 'Puay Sim', 'Peter', 'Alvin'];
+      if (e.status !== 'resolved') {
+        html += '<div class="nextstep"><h3>Assign to sales rep</h3>';
+        if (e.assignedTo) {
+          html += '<p>Currently assigned to <strong>' + esc(e.assignedTo) + '</strong>. Reassign if needed:</p>';
+        } else {
+          html += '<p>This enquiry is not yet assigned. Assign it to a rep to follow up:</p>';
+        }
+        html += '<div class="assign-row">' +
+          '<select id="assignRep">' +
+          reps.map((r) => '<option value="' + esc(r) + '"' + (r === e.assignedTo ? ' selected' : '') + '>' + esc(r) + '</option>').join('') +
+          '</select>' +
+          '<button class="assign-btn" id="assignBtn">&#128101; Assign to selected rep</button>' +
+          '<button class="btn-outline" id="assignNextBtn">&#128260; Assign to next available (round-robin)</button>' +
+          '<div class="muted" id="assignStatus"></div>' +
+          '</div></div>';
+      }
+
+      // Reply to customer: a rep types a message that is delivered to the
+      // customer's chat thread (live human-in-the-loop takeover).
+      html += '<div class="nextstep"><h3>Reply to customer</h3>';
+      html += '<div class="reply-row">' +
+        '<input id="repName" placeholder="Your name (rep)" value="' + esc(e.assignedTo || 'Puay Sim') + '" />' +
+        '<textarea id="replyText" rows="2" placeholder="Type a message to send to the customer\u2026"></textarea>' +
+        '<button class="reply-btn" id="replyBtn">&#10148; Send to customer</button>' +
+        '<div class="muted" id="replyStatus"></div>' +
+        '</div>';
+      html += '</div>';
+
+      // Next step: mark resolved (uses the existing resolve endpoint).
+      html += '<div class="nextstep"><h3>Next step</h3>';
+      if (e.status === 'resolved') {
+        html += '<p>Resolved ' + fmtTime(e.resolvedAt) + ' by ' + esc(e.resolvedBy || 'unknown') + '.</p>';
+      } else {
+        html += '<p>Once you have helped the customer, mark this enquiry resolved.</p>' +
+          '<div class="assign-row">' +
+          '<input id="resolvedBy" placeholder="Your name (rep)" value="Puay Sim" />' +
+          '<button class="assign-btn" id="resolveBtn">&#10004; Mark Resolved</button>' +
+          '</div>';
+      }
+      html += '</div>';
+
+      detailEl.innerHTML = html;
+
+      // Wire the Assign buttons.
+      async function doAssign(payload) {
+        const statusEl = document.getElementById('assignStatus');
+        if (statusEl) statusEl.textContent = 'Assigning\u2026';
+        const r = await fetch('/api/enquiries/' + encodeURIComponent(id) + '/assign', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload),
+        });
+        if (r.ok) {
+          const out = await r.json();
+          if (statusEl) statusEl.textContent = '\u2713 Assigned to ' + out.assignedTo + (out.notifiedCustomer ? ' (customer notified)' : '');
+          await loadList();
+          await loadDetail(id);
+        } else if (statusEl) {
+          statusEl.textContent = 'Assign failed. Please try again.';
+        }
+      }
+      const assignBtn = document.getElementById('assignBtn');
+      if (assignBtn) {
+        assignBtn.addEventListener('click', () => {
+          const rep = document.getElementById('assignRep').value;
+          doAssign({ assignTo: rep });
+        });
+      }
+      const assignNextBtn = document.getElementById('assignNextBtn');
+      if (assignNextBtn) {
+        assignNextBtn.addEventListener('click', () => doAssign({ roundRobin: true }));
+      }
+
+      // Wire the "Send to customer" reply button.
+      const replyBtn = document.getElementById('replyBtn');
+      if (replyBtn) {
+        replyBtn.addEventListener('click', async () => {
+          const text = document.getElementById('replyText').value.trim();
+          const repName = document.getElementById('repName').value.trim() || 'Sales Rep';
+          const statusEl = document.getElementById('replyStatus');
+          if (!text) { statusEl.textContent = 'Please type a message first.'; return; }
+          replyBtn.disabled = true;
+          statusEl.textContent = 'Sending\u2026';
+          const r = await fetch('/api/enquiries/' + encodeURIComponent(id) + '/reply', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ text, repName }),
+          });
+          if (r.ok) {
+            statusEl.textContent = '\u2713 Sent to customer.';
+            await loadList();
+            await loadDetail(id);
+          } else {
+            statusEl.textContent = 'Send failed. Please try again.';
+            replyBtn.disabled = false;
+          }
+        });
+      }
+
+      const btn = document.getElementById('resolveBtn');
+      if (btn) {
+        btn.addEventListener('click', async () => {
+          btn.disabled = true;
+          const resolvedBy = document.getElementById('resolvedBy').value.trim();
+          await fetch('/api/enquiries/' + encodeURIComponent(id) + '/resolve', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ resolvedBy }),
+          });
+          await loadList();
+          await loadDetail(id);
+        });
+      }
+    }
+
+    filterEl.addEventListener('change', () => { page = 1; loadList(); });
+    repFilterEl.addEventListener('change', () => { page = 1; loadList(); });
+
+    // Clear history: removes resolved + auto-answered items (never active ones).
+    document.getElementById('clearHistory').addEventListener('click', async () => {
+      const ok = window.confirm('Clear resolved and auto-answered history?\n\nActive enquiries (pending, assigned, in progress) are always kept.');
+      if (!ok) return;
+      const res = await fetch('/api/enquiries/clear', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ scope: 'closed' }),
+      });
+      if (res.ok) {
+        const out = await res.json();
+        selectedId = null;
+        detailEl.innerHTML = '<div class="placeholder">Removed ' + out.removed + ' item(s). ' + out.remaining + ' remaining.</div>';
+        detailBadge.style.display = 'none';
+        page = 1;
+        await loadList();
+      }
+    });
+    document.getElementById('refresh').addEventListener('click', () => { page = 1; loadList(); });
+
+    // Initial load + light auto-refresh (keeps the selected detail).
+    loadList();
+    setInterval(loadList, 8000);
+  </script>
+</body>
+</html>

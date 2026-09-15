@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secure Payment — BIS Computer Services</title>
+  <style>
+    :root { --brand:#128C7E; --brand-dark:#075E54; --ok:#1FA855; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: #ece5dd; color: #111; display: flex; min-height: 100vh; align-items: center; justify-content: center; padding: 16px;
+    }
+    .card { background: #fff; width: 100%; max-width: 420px; border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.15); overflow: hidden; }
+    .head { background: var(--brand-dark); color: #fff; padding: 18px 20px; }
+    .head h1 { margin: 0; font-size: 18px; }
+    .head .lock { font-size: 13px; opacity: .85; margin-top: 4px; }
+    .body { padding: 20px; }
+    .row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee; font-size: 15px; }
+    .row .k { color: #666; }
+    .row .v { font-weight: 600; }
+    .amount { font-size: 30px; font-weight: 700; color: var(--brand-dark); margin: 14px 0 4px; text-align: center; }
+    .method { text-align: center; color: #555; margin-bottom: 16px; }
+    label { display:block; font-size: 13px; color:#555; margin: 10px 0 4px; }
+    input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px; }
+    button {
+      width: 100%; margin-top: 18px; padding: 14px; border: none; border-radius: 10px;
+      background: var(--brand); color: #fff; font-size: 16px; font-weight: 600; cursor: pointer;
+    }
+    button:disabled { background: #9ac; cursor: default; }
+    .note { font-size: 12px; color: #888; text-align: center; margin-top: 12px; }
+    .paid { text-align: center; padding: 10px 0; }
+    .paid .tick { font-size: 46px; }
+    .paid h2 { color: var(--ok); margin: 6px 0; }
+    pre.confirm { background:#f6f6f6; border-radius:8px; padding:12px; font-size:12.5px; white-space:pre-wrap; word-break:break-word; text-align:left; }
+    .qr { width: 150px; height: 150px; margin: 6px auto 0; background:
+        repeating-linear-gradient(45deg,#075E54,#075E54 8px,#fff 8px,#fff 16px);
+        border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="head">
+      <h1>Secure Payment</h1>
+      <div class="lock">🔒 BIS Computer Services · Test Gateway (demo)</div>
+    </div>
+    <div class="body" id="body">
+      <div id="loading">Loading payment details…</div>
+    </div>
+  </div>
+
+  <script>
+    const id = location.pathname.split('/').filter(Boolean).pop();
+    const body = document.getElementById('body');
+
+    function money(cur, amt) { return cur + ' ' + Number(amt).toLocaleString(); }
+
+    async function load() {
+      const res = await fetch('/pay/' + id + '/info');
+      if (!res.ok) { body.innerHTML = '<p>Payment not found.</p>'; return; }
+      const p = await res.json();
+      if (p.status === 'paid') { renderPaid(p); return; }
+      renderForm(p);
+    }
+
+    function renderForm(p) {
+      const isPayNow = p.method === 'paynow';
+      body.innerHTML = `
+        <div class="amount">${money(p.currency, p.amount)}</div>
+        <div class="method">${isPayNow ? '🏦 PayNow / SGQR' : '💳 Pay by Card'}</div>
+        <div class="row"><span class="k">Quote</span><span class="v">${p.quoteRef || '-'}</span></div>
+        <div class="row"><span class="k">Item</span><span class="v">${p.productName || '-'}</span></div>
+        <div class="row"><span class="k">Quantity</span><span class="v">${p.quantity || 1}</span></div>
+        ${isPayNow ? '<div class="qr" title="Scan to pay (demo)"></div>' : `
+          <label>Name on card</label><input id="cn" placeholder="Card holder name" />
+          <label>Card number</label><input id="cc" placeholder="4242 4242 4242 4242" />
+        `}
+        <label>Delivery name</label><input id="dname" placeholder="Your name" />
+        <label>Delivery address</label><input id="daddr" placeholder="Address incl. postal code" />
+        <button id="pay">Pay ${money(p.currency, p.amount)}</button>
+        <div class="note">This is a secure test payment for demonstration. No real charge is made.</div>
+      `;
+      document.getElementById('pay').addEventListener('click', () => complete(p));
+    }
+
+    async function complete(p) {
+      const btn = document.getElementById('pay');
+      btn.disabled = true; btn.textContent = 'Processing…';
+      const payload = {
+        customerName: (document.getElementById('dname') || {}).value || undefined,
+        deliveryAddress: (document.getElementById('daddr') || {}).value || undefined,
+      };
+      const res = await fetch('/pay/' + id + '/complete', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload),
+      });
+      if (!res.ok) { btn.disabled = false; btn.textContent = 'Retry payment'; return; }
+      const out = await res.json();
+      renderPaid(Object.assign({}, p, { status: 'paid' }), out.confirmation);
+    }
+
+    function renderPaid(p, confirmation) {
+      body.innerHTML = `
+        <div class="paid">
+          <div class="tick">✅</div>
+          <h2>Payment received</h2>
+          <div class="row"><span class="k">Order</span><span class="v">${p.orderRef || '-'}</span></div>
+          <div class="row"><span class="k">Invoice</span><span class="v">${p.invoiceRef || '-'}</span></div>
+          <div class="row"><span class="k">Amount paid</span><span class="v">${money(p.currency, p.amount)}</span></div>
+          <div class="row"><span class="k">Delivery</span><span class="v">${p.deliveryRef || '-'}</span></div>
+        </div>
+        ${confirmation ? '<pre class="confirm">' + confirmation.replace(/</g,'&lt;') + '</pre>' : ''}
+        <div class="note">A confirmation has been sent to your WhatsApp chat. You can close this page.</div>
+      `;
+    }
+
+    load();
+  </script>
+</body>
+</html>

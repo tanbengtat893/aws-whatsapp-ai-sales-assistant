@@ -1,0 +1,27 @@
+{
+  "name": "whatsapp-sales",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Hybrid WhatsApp sales enquiries assistant: auto-answers FAQs in en/ms/zh and escalates uncertain enquiries to a human rep.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --runInBand"
+  },
+  "keywords": [
+    "whatsapp",
+    "sales",
+    "faq",
+    "chatbot"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}

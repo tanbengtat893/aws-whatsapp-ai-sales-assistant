@@ -1,0 +1,13 @@
+{
+    "version": "v1",
+    "hooks": [
+        {
+            "name": "Verify tests after a spec task completes",
+            "trigger": "PostTaskExec",
+            "action": {
+                "type": "command",
+                "command": "npm test --silent"
+            }
+        }
+    ]
+}

@@ -1,0 +1,3002 @@
+[
+  {
+    "orderNo": "DO202600001",
+    "deliveryOrderNo": "DO202600001",
+    "customerName": "Aaron Tan",
+    "customerPhone": "+65 80000000",
+    "customerPhoneDigits": "6580000000",
+    "customerEmail": "aaron.tan@example.com",
+    "deliveryAddress": "101 Bukit Panjang Road, #01-01, Singapore 560123",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 09:00",
+    "eta": "2026-09-09 08:30",
+    "status": "Scheduled",
+    "driverName": "Daniel Wong",
+    "driverPhone": "+65 9000 1001",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Asus GeForce Prime RTX5060 O8G Triple Fan GDDR7",
+        "unitPrice": 739,
+        "quantity": 1
+      },
+      {
+        "description": "Lian Li O11 Dynamic Evo XL Black/White TG Casing",
+        "unitPrice": 269,
+        "quantity": 1
+      },
+      {
+        "description": "Corsair 4000D Airflow Rgb White Edition TG Casing",
+        "unitPrice": 169,
+        "quantity": 1
+      },
+      {
+        "description": "rFaacntal Design Era 2 Midnight Blue ITX Casing",
+        "unitPrice": 285,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GeForce Proart RTX5070Ti O16G Triple Fan OC GDDR7",
+        "unitPrice": 1849,
+        "quantity": 1
+      },
+      {
+        "description": "Intel® Ultra 7 256v 8Core RTX™5080-16GB /RTX™5070Ti-12GB GDDR",
+        "unitPrice": 7,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 3318,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600002",
+    "deliveryOrderNo": "DO202600002",
+    "customerName": "Brandon Lim",
+    "customerPhone": "+65 80000001",
+    "customerPhoneDigits": "6580000001",
+    "customerEmail": "brandon.lim@example.com",
+    "deliveryAddress": "108 Jurong East Street, #02-04, Singapore 600234",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 11:30",
+    "eta": "2026-09-09 11:00",
+    "status": "Confirmed",
+    "driverName": "Ravi Kumar",
+    "driverPhone": "+65 9000 1002",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "FD North Charcoal Black/White Casing",
+        "unitPrice": 215,
+        "quantity": 1
+      },
+      {
+        "description": "SSUPD Meshroom S ITX Airflow Mesh Black Casing",
+        "unitPrice": 228,
+        "quantity": 1
+      },
+      {
+        "description": "Gigabyte GeForce RTX5080 Gaming OC 16GB Triple Fan GDDR7",
+        "unitPrice": 2569,
+        "quantity": 1
+      },
+      {
+        "description": "Tecware Nexus Air Mesh TG ATX (4Fans)",
+        "unitPrice": 60,
+        "quantity": 1
+      },
+      {
+        "description": "Gigabyte GeForce RTX5080 Aorus Master ICE 16GB OC Triple Fan GDDR7",
+        "unitPrice": 2609,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung 870 Evo 2.5\"Sata Ssd(5yrs)",
+        "unitPrice": 569,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 6250,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600003",
+    "deliveryOrderNo": "DO202600003",
+    "customerName": "Cheryl Ng",
+    "customerPhone": "+65 80000002",
+    "customerPhoneDigits": "6580000002",
+    "customerEmail": "cheryl.ng@example.com",
+    "deliveryAddress": "115 Tampines Avenue, #03-07, Singapore 520345",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 13:00",
+    "eta": "2026-09-09 12:30",
+    "status": "Out for Delivery",
+    "driverName": "Jason Lim",
+    "driverPhone": "+65 9000 1003",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Galax Geforce RTX5070 OC Black 12GB Triple Fan GDDR7 W",
+        "unitPrice": 1289,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial X10 Pro Portable Ssd",
+        "unitPrice": 659,
+        "quantity": 1
+      },
+      {
+        "description": "SK Hynix Platinum P41 SSD 7000MB/s Gen4 NVME M.2",
+        "unitPrice": 359,
+        "quantity": 1
+      },
+      {
+        "description": "Galax Geforce RTX5080 WHITE OC 16GB Triple Fan GDDR7 M",
+        "unitPrice": 2569,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GT710 2GB GDDR5",
+        "unitPrice": 99,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial P310 6600/7100MB/s Nvme Gen4 M.2 Ssd(5yrs)",
+        "unitPrice": 869,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 5844,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600004",
+    "deliveryOrderNo": "DO202600004",
+    "customerName": "Daniel Koh",
+    "customerPhone": "+65 80000003",
+    "customerPhoneDigits": "6580000003",
+    "customerEmail": "daniel.koh@example.com",
+    "deliveryAddress": "122 Woodlands Street, #04-10, Singapore 730456",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 15:30",
+    "eta": "2026-09-09 15:00",
+    "status": "In Transit",
+    "driverName": "Marcus Tan",
+    "driverPhone": "+65 9000 1004",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "PowerColor Amd Radeon HellHound Spectral White RX9070XT 16GB OC Triple Fan GDDR6",
+        "unitPrice": 1079,
+        "quantity": 1
+      },
+      {
+        "description": "Corsair 480T Black Airflow TG Casing",
+        "unitPrice": 80,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial T710 Gen5 14900MB/s HeatSink NVMe M.2",
+        "unitPrice": 359,
+        "quantity": 1
+      },
+      {
+        "description": "Asus Amd Radeon Prime RX9070 O16G Evo Triple Fan GDDR6",
+        "unitPrice": 869,
+        "quantity": 1
+      },
+      {
+        "description": "225 PN65-S5014AD Intel U5-125H 16GB DDR5 512GB SSD TPM Win",
+        "unitPrice": 11,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial PC4 3200MHz Single Stick Sodimm Ram - 109 199",
+        "unitPrice": 329,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 2727,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600005",
+    "deliveryOrderNo": "DO202600005",
+    "customerName": "Ethan Lee",
+    "customerPhone": "+65 80000004",
+    "customerPhoneDigits": "6580000004",
+    "customerEmail": "ethan.lee@example.com",
+    "deliveryAddress": "129 Hougang Avenue, #05-13, Singapore 530567",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 17:00",
+    "eta": "2026-09-09 16:30",
+    "status": "Delivered",
+    "driverName": "Kevin Goh",
+    "driverPhone": "+65 9000 1005",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "XASTRA QW505M Black Argb TG Casing(6Fans)",
+        "unitPrice": 80,
+        "quantity": 1
+      },
+      {
+        "description": "Asus Dual Amd Radeon RX 7800XT O16G Triple Fan GDDR6",
+        "unitPrice": 719,
+        "quantity": 1
+      },
+      {
+        "description": "APNX V1 Black/White Dual Chamber TG ATX Casing",
+        "unitPrice": 85,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung 870 Evo 2.5\"Sata Ssd(5yrs)",
+        "unitPrice": 569,
+        "quantity": 1
+      },
+      {
+        "description": "FD Meshify 3 XL Black TG Light Tint E-ATX Casing",
+        "unitPrice": 279,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5070Ti 16Gb Gaming Trio OC Black Triple Fan GDDR7",
+        "unitPrice": 1899,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 3631,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600006",
+    "deliveryOrderNo": "DO202600006",
+    "customerName": "Felicia Wong",
+    "customerPhone": "+65 80000005",
+    "customerPhoneDigits": "6580000005",
+    "customerEmail": "felicia.wong@example.com",
+    "deliveryAddress": "136 Sengkang East Way, #06-16, Singapore 540678",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 09:30",
+    "eta": "2026-09-09 09:00",
+    "status": "Delivery Delayed",
+    "driverName": "Andrew Lee",
+    "driverPhone": "+65 9000 1006",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Asus Amd Radeon Prime RX9070 O16G Evo Triple Fan GDDR6",
+        "unitPrice": 869,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial E100 5000MB/s Gen4 Nvme M.2 Ssd(3yrs)",
+        "unitPrice": 429,
+        "quantity": 1
+      },
+      {
+        "description": "SS 6U 12-Bay Rackmount Chassis with 12 X2.5\" SSD or 3.5\" HDD Hot-swappable T",
+        "unitPrice": 980,
+        "quantity": 1
+      },
+      {
+        "description": "DarkFlash C280 Argb Black(7Fans) TG Atx Casing",
+        "unitPrice": 80,
+        "quantity": 1
+      },
+      {
+        "description": "Corsair 480T Black Airflow TG Casing",
+        "unitPrice": 80,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial BX500 2.5\"Sata SSD(3yrs)",
+        "unitPrice": 1089,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 3527,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600007",
+    "deliveryOrderNo": "DO202600007",
+    "customerName": "Gerald Chua",
+    "customerPhone": "+65 80000006",
+    "customerPhoneDigits": "6580000006",
+    "customerEmail": "gerald.chua@example.com",
+    "deliveryAddress": "143 Pasir Ris Drive, #07-19, Singapore 510789",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 11:00",
+    "eta": "2026-09-09 10:30",
+    "status": "Scheduled",
+    "driverName": "Farid Rahman",
+    "driverPhone": "+65 9000 1007",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Samsung T9 Portable Ssd(3yrs)",
+        "unitPrice": 379,
+        "quantity": 1
+      },
+      {
+        "description": "Gigabyte Amd Radeon RX9070 Gaming OC 16G Triple Fan GDDR6",
+        "unitPrice": 979,
+        "quantity": 1
+      },
+      {
+        "description": "FD North XL Charcoal Black/White Atx Casing",
+        "unitPrice": 265,
+        "quantity": 1
+      },
+      {
+        "description": "KINGBANK KP260 Plus 512Gb Nvme M.2 Ssd",
+        "unitPrice": 269,
+        "quantity": 1
+      },
+      {
+        "description": "Corsair 3200D RS Black/White/Smoke TG Casing",
+        "unitPrice": 115,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5060 8Gb Shadow 2X OC Twin Fan GDDR7",
+        "unitPrice": 659,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 2666,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600008",
+    "deliveryOrderNo": "DO202600008",
+    "customerName": "Hannah Goh",
+    "customerPhone": "+65 80000007",
+    "customerPhoneDigits": "6580000007",
+    "customerEmail": "hannah.goh@example.com",
+    "deliveryAddress": "150 Punggol Field, #08-02, Singapore 820890",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 13:30",
+    "eta": "2026-09-09 13:00",
+    "status": "Confirmed",
+    "driverName": "Benjamin Chua",
+    "driverPhone": "+65 9000 1008",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Msi GeForce RTX5060Ti 16Gb Ventus 2X OC Plus Dual Fan GDDR7",
+        "unitPrice": 1169,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GeForce Prime RTX5050 O8G Triple Fan GDDR7",
+        "unitPrice": 659,
+        "quantity": 1
+      },
+      {
+        "description": "Design Ridge ITX Casing",
+        "unitPrice": 197,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial E100 5000MB/s Gen4 Nvme M.2 Ssd(3yrs)",
+        "unitPrice": 169,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GT730 4HDMI 2GB GDDR5",
+        "unitPrice": 179,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5070Ti 16Gb Shadow 3X OC Triple Fan GDDR7",
+        "unitPrice": 1789,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 4162,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600009",
+    "deliveryOrderNo": "DO202600009",
+    "customerName": "Ivan Teo",
+    "customerPhone": "+65 80000008",
+    "customerPhoneDigits": "6580000008",
+    "customerEmail": "ivan.teo@example.com",
+    "deliveryAddress": "157 Bedok North Road, #09-05, Singapore 460901",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 15:00",
+    "eta": "2026-09-09 14:30",
+    "status": "Out for Delivery",
+    "driverName": "Ryan Koh",
+    "driverPhone": "+65 9000 1009",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "RTX 5060TI 8GB $ 1859",
+        "unitPrice": 23,
+        "quantity": 1
+      },
+      {
+        "description": "FD Meshify 3 Black RGB TG Light Tint ATX Casing",
+        "unitPrice": 248,
+        "quantity": 1
+      },
+      {
+        "description": "DarkFlash C280 Argb Black(7Fans) TG Atx Casing",
+        "unitPrice": 80,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5060Ti 16GB Gaming Trio OC Triple Fan GDDR7",
+        "unitPrice": 1209,
+        "quantity": 1
+      },
+      {
+        "description": "Silverstone Lucid 04 Black Argb TG m-ATX Casing",
+        "unitPrice": 69,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GeForce T1 RTX5070 O12G Triple Fan OC GDDR7 (Limited Edition)",
+        "unitPrice": 1349,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 2978,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600010",
+    "deliveryOrderNo": "DO202600010",
+    "customerName": "Jason Low",
+    "customerPhone": "+65 80000009",
+    "customerPhoneDigits": "6580000009",
+    "customerEmail": "jason.low@example.com",
+    "deliveryAddress": "164 Bishan Street, #10-08, Singapore 570012",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 17:30",
+    "eta": "2026-09-09 17:00",
+    "status": "In Transit",
+    "driverName": "Nicholas Wong",
+    "driverPhone": "+65 9000 1010",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Crucial BX500 2.5\"Sata SSD(3yrs)",
+        "unitPrice": 259,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5080 16GB Gaming Trio OC White Triple Fan GDDR7",
+        "unitPrice": 2759,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial BX500 2.5\"Sata SSD(3yrs)",
+        "unitPrice": 1089,
+        "quantity": 1
+      },
+      {
+        "description": "FD Meshify 3 XL Black TG Light Tint E-ATX Casing",
+        "unitPrice": 279,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GeForce Proart RTX5070Ti O16G Triple Fan OC GDDR7",
+        "unitPrice": 1849,
+        "quantity": 1
+      },
+      {
+        "description": "Team T-Force MP44L 5000MB/s Gen4 Nvme M.2(5yrs)",
+        "unitPrice": 160,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 6395,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600011",
+    "deliveryOrderNo": "DO202600011",
+    "customerName": "Karen Ong",
+    "customerPhone": "+65 80000010",
+    "customerPhoneDigits": "6580000010",
+    "customerEmail": "karen.ong@example.com",
+    "deliveryAddress": "171 Toa Payoh Lorong, #11-11, Singapore 310123",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 09:00",
+    "eta": "2026-09-09 08:30",
+    "status": "Delivered",
+    "driverName": "Daniel Wong",
+    "driverPhone": "+65 9000 1001",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Gigabyte Amd Radeon RX9060XT Gaming OC 16Gb (9060XT 16GB Gaming ICE $ 719)",
+        "unitPrice": 769,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung T9 Portable Ssd(3yrs)",
+        "unitPrice": 1399,
+        "quantity": 1
+      },
+      {
+        "description": "Galax Geforce RTX5060Ti EX Black 8GB Twin Fan GDDR7 D",
+        "unitPrice": 899,
+        "quantity": 1
+      },
+      {
+        "description": "Intel® Ultra 7 256v 8Core RTX™5080-16GB /RTX™5070Ti-12GB GDDR",
+        "unitPrice": 7,
+        "quantity": 1
+      },
+      {
+        "description": "DarkFlash DS900WS Black TG Airflow ATX Casing",
+        "unitPrice": 52,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5070Ti 16Gb Shadow 3X OC Triple Fan GDDR7",
+        "unitPrice": 1789,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 4915,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600012",
+    "deliveryOrderNo": "DO202600012",
+    "customerName": "Leonard Ho",
+    "customerPhone": "+65 80000011",
+    "customerPhoneDigits": "6580000011",
+    "customerEmail": "leonard.ho@example.com",
+    "deliveryAddress": "178 Clementi Avenue, #12-14, Singapore 120234",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 11:30",
+    "eta": "2026-09-09 11:00",
+    "status": "Delivery Delayed",
+    "driverName": "Ravi Kumar",
+    "driverPhone": "+65 9000 1002",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "FD Meshify 3 Solid Black ATX Casing",
+        "unitPrice": 209,
+        "quantity": 1
+      },
+      {
+        "description": "Powercolor Amd Radeon Hellhound RX9060XT 8GB OC Triple Fan DRR6",
+        "unitPrice": 509,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial T500 Pro Gen4 Heatsink Nvme M.2 Nmve M.2",
+        "unitPrice": 989,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5090 32GB Vanguard SOC Triple Fan GDDR7",
+        "unitPrice": 7699,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung 990 Pro Heatsink Nvme 2.0 7400MB/s M.2(5yrs)",
+        "unitPrice": 395,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5070 12Gb Gaming Trio OC Triple Fan GDDR7",
+        "unitPrice": 1369,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 11170,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600013",
+    "deliveryOrderNo": "DO202600013",
+    "customerName": "Melissa Chan",
+    "customerPhone": "+65 80000012",
+    "customerPhoneDigits": "6580000012",
+    "customerEmail": "melissa.chan@example.com",
+    "deliveryAddress": "185 Bukit Panjang Road, #13-17, Singapore 140345",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 13:00",
+    "eta": "2026-09-09 12:30",
+    "status": "Scheduled",
+    "driverName": "Jason Lim",
+    "driverPhone": "+65 9000 1003",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Lian Li O11 Dynamic Evo XL Black/White TG Casing",
+        "unitPrice": 269,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial T710 Gen5 14900MB/s HeatSink NVMe M.2",
+        "unitPrice": 809,
+        "quantity": 1
+      },
+      {
+        "description": "Asus Proart PA401 Wood Black TG Atx Casing",
+        "unitPrice": 159,
+        "quantity": 1
+      },
+      {
+        "description": "HAVN HS 420 DOOM Hybrid Base Edition TG Casing",
+        "unitPrice": 439,
+        "quantity": 1
+      },
+      {
+        "description": "Kingston SNV3S Gen4 Nvme M.2 Ssd(3yrs)",
+        "unitPrice": 165,
+        "quantity": 1
+      },
+      {
+        "description": "Asus Amd Radeon RX 7900XT 20Gb Reference Triple Fan GDDR6",
+        "unitPrice": 1175,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 3016,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600014",
+    "deliveryOrderNo": "DO202600014",
+    "customerName": "Nicholas Yap",
+    "customerPhone": "+65 80000013",
+    "customerPhoneDigits": "6580000013",
+    "customerEmail": "nicholas.yap@example.com",
+    "deliveryAddress": "192 Jurong East Street, #14-20, Singapore 550456",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 15:30",
+    "eta": "2026-09-09 15:00",
+    "status": "Confirmed",
+    "driverName": "Marcus Tan",
+    "driverPhone": "+65 9000 1004",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Asus Geforce Rog Strix RTX5070Ti O16G Gaming Triple Fan GDDR7",
+        "unitPrice": 1919,
+        "quantity": 1
+      },
+      {
+        "description": "Leadtek Nvidia RTX Pro 6000 BlackWell WorkStation 96Gb GDDR7",
+        "unitPrice": 25999,
+        "quantity": 1
+      },
+      {
+        "description": "2.5''/M.2 SATA INTERNAL SSD 250GB",
+        "unitPrice": 500,
+        "quantity": 1
+      },
+      {
+        "description": "Galax Geforce RTX5080 WHITE OC 16GB Triple Fan GDDR7 M",
+        "unitPrice": 2569,
+        "quantity": 1
+      },
+      {
+        "description": "SS 3U RACKMOUT CHASSIS support 360mm Liquid Cooler, up to SSI-EEB MB, 8 x PCI",
+        "unitPrice": 372,
+        "quantity": 1
+      },
+      {
+        "description": "FD North Charcoal Black/White Casing",
+        "unitPrice": 215,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 31574,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600015",
+    "deliveryOrderNo": "DO202600015",
+    "customerName": "Olivia Tan",
+    "customerPhone": "+65 80000014",
+    "customerPhoneDigits": "6580000014",
+    "customerEmail": "olivia.tan@example.com",
+    "deliveryAddress": "199 Tampines Avenue, #15-03, Singapore 760567",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 17:00",
+    "eta": "2026-09-09 16:30",
+    "status": "Out for Delivery",
+    "driverName": "Kevin Goh",
+    "driverPhone": "+65 9000 1005",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "SK Hynix Platinum P41 SSD 7000MB/s Gen4 NVME M.2",
+        "unitPrice": 359,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung T9 Portable Ssd(3yrs)",
+        "unitPrice": 1399,
+        "quantity": 1
+      },
+      {
+        "description": "Corsair Frame 4000D RS Black TG ATX Casing",
+        "unitPrice": 135,
+        "quantity": 1
+      },
+      {
+        "description": "HAVN HS 420 VGPU Hybrid structure case Blk/Wh2t",
+        "unitPrice": 99,
+        "quantity": 1
+      },
+      {
+        "description": "Kingston SNV3S Gen4 Nvme M.2 Ssd(3yrs)",
+        "unitPrice": 269,
+        "quantity": 1
+      },
+      {
+        "description": "Leadtek Nvidia RTX Pro 5000 BlackWell Gen 48Gb GDDR7",
+        "unitPrice": 13699,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 15960,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600016",
+    "deliveryOrderNo": "DO202600016",
+    "customerName": "Patrick Lim",
+    "customerPhone": "+65 80000015",
+    "customerPhoneDigits": "6580000015",
+    "customerEmail": "patrick.lim@example.com",
+    "deliveryAddress": "206 Woodlands Street, #16-06, Singapore 560678",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 09:30",
+    "eta": "2026-09-09 09:00",
+    "status": "In Transit",
+    "driverName": "Andrew Lee",
+    "driverPhone": "+65 9000 1006",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Crucial E100 5000MB/s Gen4 Nvme M.2 Ssd(3yrs)",
+        "unitPrice": 169,
+        "quantity": 1
+      },
+      {
+        "description": "Galax Geforce RTX5070 OC Black 12GB Triple Fan GDDR7 W",
+        "unitPrice": 1289,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5070 12Gb Shadow 2X OC Twin Fan GDDR7",
+        "unitPrice": 1289,
+        "quantity": 1
+      },
+      {
+        "description": "Asus Amd Radeon RX 7900XT 20Gb Reference Triple Fan GDDR6",
+        "unitPrice": 1175,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial T710 Gen5 14900MB/s HeatSink NVMe M.2",
+        "unitPrice": 809,
+        "quantity": 1
+      },
+      {
+        "description": "Team T-Force G70 Pro 7400MB/s M.2 GEN4 PCIe NVMe",
+        "unitPrice": 299,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 5030,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600017",
+    "deliveryOrderNo": "DO202600017",
+    "customerName": "Rachel Goh",
+    "customerPhone": "+65 80000016",
+    "customerPhoneDigits": "6580000016",
+    "customerEmail": "rachel.goh@example.com",
+    "deliveryAddress": "213 Hougang Avenue, #17-09, Singapore 680789",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 11:00",
+    "eta": "2026-09-09 10:30",
+    "status": "Delivered",
+    "driverName": "Farid Rahman",
+    "driverPhone": "+65 9000 1007",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Crucial X10 Pro Portable Ssd",
+        "unitPrice": 1029,
+        "quantity": 1
+      },
+      {
+        "description": "Faal nDsesign Mood Gray/Black ITX Casing",
+        "unitPrice": 249,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5060Ti 8Gb Shadow 2X OC Plus Dual Fan GDDR7",
+        "unitPrice": 859,
+        "quantity": 1
+      },
+      {
+        "description": "RTX 5060 8GB $ 1789",
+        "unitPrice": 33,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial X9 Portable Ssd",
+        "unitPrice": 309,
+        "quantity": 1
+      },
+      {
+        "description": "FD North XL Charcoal Black/White Atx Casing",
+        "unitPrice": 265,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 2744,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600018",
+    "deliveryOrderNo": "DO202600018",
+    "customerName": "Samuel Ng",
+    "customerPhone": "+65 80000017",
+    "customerPhoneDigits": "6580000017",
+    "customerEmail": "samuel.ng@example.com",
+    "deliveryAddress": "220 Sengkang East Way, #18-12, Singapore 650890",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 13:30",
+    "eta": "2026-09-09 13:00",
+    "status": "Delivery Delayed",
+    "driverName": "Benjamin Chua",
+    "driverPhone": "+65 9000 1008",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "ATAGB10-9000,HDMIx1 16GB LP-Ram+1TB SSD+Lan 2.5G K17/ 5G K",
+        "unitPrice": 13,
+        "quantity": 1
+      },
+      {
+        "description": "Kingston Fury Renegade HeatSink 7300MB/s Nvme SSD",
+        "unitPrice": 459,
+        "quantity": 1
+      },
+      {
+        "description": "i9 $1,288 U9 $1,520 U9 $2,488 RTX",
+        "unitPrice": 5070,
+        "quantity": 1
+      },
+      {
+        "description": "M Faasntser MasterBox NR200P TG ITX",
+        "unitPrice": 117,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung T7 Shield Portable SSD (3yrs wty)",
+        "unitPrice": 379,
+        "quantity": 1
+      },
+      {
+        "description": "Lian Li O11 Vision Compact Black/White TG Casing",
+        "unitPrice": 145,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 6183,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600019",
+    "deliveryOrderNo": "DO202600019",
+    "customerName": "Terence Koh",
+    "customerPhone": "+65 80000018",
+    "customerPhoneDigits": "6580000018",
+    "customerEmail": "terence.koh@example.com",
+    "deliveryAddress": "227 Pasir Ris Drive, #19-15, Singapore 330901",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 15:00",
+    "eta": "2026-09-09 14:30",
+    "status": "Scheduled",
+    "driverName": "Ryan Koh",
+    "driverPhone": "+65 9000 1009",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Lian Li O11 Vision Compact Black/White TG Casing",
+        "unitPrice": 145,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial T710 Gen5 14900MB/s HeatSink NVMe M.2",
+        "unitPrice": 359,
+        "quantity": 1
+      },
+      {
+        "description": "RTX 5070TI 16GB $ 3689",
+        "unitPrice": 27,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5090 32GB Vanguard SOC Triple Fan GDDR7",
+        "unitPrice": 7699,
+        "quantity": 1
+      },
+      {
+        "description": "Wd Blue SA510 2.5\"Sata 560MB/s Ssd(5yrs)",
+        "unitPrice": 399,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GeForce T1 Gaming RTX5060Ti O8G OC Triple Fan GDDR7(Limited Edition)",
+        "unitPrice": 859,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 9488,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600020",
+    "deliveryOrderNo": "DO202600020",
+    "customerName": "Vanessa Lee",
+    "customerPhone": "+65 80000019",
+    "customerPhoneDigits": "6580000019",
+    "customerEmail": "vanessa.lee@example.com",
+    "deliveryAddress": "234 Punggol Field, #20-18, Singapore 440012",
+    "deliveryDate": "2026-09-09",
+    "arrangedDeliveryTime": "2026-09-09 17:30",
+    "eta": "2026-09-09 17:00",
+    "status": "Confirmed",
+    "driverName": "Nicholas Wong",
+    "driverPhone": "+65 9000 1010",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "SK Hynix Platinum P41 SSD 7000MB/s Gen4 NVME M.2",
+        "unitPrice": 699,
+        "quantity": 1
+      },
+      {
+        "description": "Phanteks XT V5 Drgb Black 4Fans TG Atx Casing",
+        "unitPrice": 98,
+        "quantity": 1
+      },
+      {
+        "description": "G.SKILL FLARE X5 DDR5 6000MHz CL30 Amd Expo Kit 679",
+        "unitPrice": 1259,
+        "quantity": 1
+      },
+      {
+        "description": "Powercolor Amd Radeon Reaper RX9060XT 8GB Twin Fan GDDR6",
+        "unitPrice": 489,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5060 8Gb Gaming OC Twin Fan GDDR7",
+        "unitPrice": 719,
+        "quantity": 1
+      },
+      {
+        "description": "Corsair 480T Black Airflow TG Casing",
+        "unitPrice": 80,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 3344,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600021",
+    "deliveryOrderNo": "DO202600021",
+    "customerName": "William Chua",
+    "customerPhone": "+65 80000020",
+    "customerPhoneDigits": "6580000020",
+    "customerEmail": "william.chua@example.com",
+    "deliveryAddress": "241 Bedok North Road, #21-01, Singapore 560123",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 09:00",
+    "eta": "2026-09-10 08:30",
+    "status": "Out for Delivery",
+    "driverName": "Daniel Wong",
+    "driverPhone": "+65 9000 1001",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Crucial E100 5000MB/s Gen4 Nvme M.2 Ssd(3yrs)",
+        "unitPrice": 429,
+        "quantity": 1
+      },
+      {
+        "description": "FD POP 2 Air Rgb Black TG ATX Casing",
+        "unitPrice": 152,
+        "quantity": 1
+      },
+      {
+        "description": "RTX5080 WHITE",
+        "unitPrice": 4529,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung 9100 Pro 14700MB/s Ssd(8TB $2759)",
+        "unitPrice": 759,
+        "quantity": 1
+      },
+      {
+        "description": "Galax Geforce RTX5060 1-Click OC 8GB Twin Fan GDDR7 DW",
+        "unitPrice": 669,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GeForce Tuf Gaming RTX5080 O16G Gaming Triple Fan GDDR7",
+        "unitPrice": 2689,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 9227,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600022",
+    "deliveryOrderNo": "DO202600022",
+    "customerName": "Xavier Wong",
+    "customerPhone": "+65 80000021",
+    "customerPhoneDigits": "6580000021",
+    "customerEmail": "xavier.wong@example.com",
+    "deliveryAddress": "248 Bishan Street, #22-04, Singapore 600234",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 11:30",
+    "eta": "2026-09-10 11:00",
+    "status": "In Transit",
+    "driverName": "Ravi Kumar",
+    "driverPhone": "+65 9000 1002",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Samsung T9 Portable Ssd(3yrs)",
+        "unitPrice": 379,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5070Ti 16Gb Shadow 3X OC Triple Fan GDDR7",
+        "unitPrice": 1789,
+        "quantity": 1
+      },
+      {
+        "description": "2.5''/M.2 SATA INTERNAL SSD 250GB",
+        "unitPrice": 500,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung 990 Evo Plus 7250MB/s Gen4 Nvme M.2(5yrs)",
+        "unitPrice": 1205,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial T500 Pro 7400MB/s Gen4 Nvme M.2 Nmve M.2",
+        "unitPrice": 209,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung 870 Evo 2.5\"Sata Ssd(5yrs)",
+        "unitPrice": 569,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 4651,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600023",
+    "deliveryOrderNo": "DO202600023",
+    "customerName": "Yvonne Teo",
+    "customerPhone": "+65 80000022",
+    "customerPhoneDigits": "6580000022",
+    "customerEmail": "yvonne.teo@example.com",
+    "deliveryAddress": "255 Toa Payoh Lorong, #23-07, Singapore 520345",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 13:00",
+    "eta": "2026-09-10 12:30",
+    "status": "Delivered",
+    "driverName": "Jason Lim",
+    "driverPhone": "+65 9000 1003",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Leadtek Nvidia RTX A400 4GB GDDR6 Gpu",
+        "unitPrice": 465,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung T9 Portable Ssd(3yrs)",
+        "unitPrice": 379,
+        "quantity": 1
+      },
+      {
+        "description": "Cooler Master Haf 700 Argb TG Casing",
+        "unitPrice": 393,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5060Ti 8Gb Ventus 3X OC Triple Fan GDDR7",
+        "unitPrice": 879,
+        "quantity": 1
+      },
+      {
+        "description": "FS6812X 12-Bay M.2 Nvme Nas",
+        "unitPrice": 2169,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial T710 Gen5 14900MB/s NVMe M.2 Ssd(5Yrs)",
+        "unitPrice": 1389,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 5674,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600024",
+    "deliveryOrderNo": "DO202600024",
+    "customerName": "Zachary Low",
+    "customerPhone": "+65 80000023",
+    "customerPhoneDigits": "6580000023",
+    "customerEmail": "zachary.low@example.com",
+    "deliveryAddress": "262 Clementi Avenue, #24-10, Singapore 730456",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 15:30",
+    "eta": "2026-09-10 15:00",
+    "status": "Delivery Delayed",
+    "driverName": "Marcus Tan",
+    "driverPhone": "+65 9000 1004",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Li B4 Black/White m-ATX Casing",
+        "unitPrice": 115,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial P310 6600/7100MB/s Nvme Gen4 M.2 Ssd(5yrs)",
+        "unitPrice": 869,
+        "quantity": 1
+      },
+      {
+        "description": "XASTRA QW505M White Argb TG Casing(6Fans)",
+        "unitPrice": 85,
+        "quantity": 1
+      },
+      {
+        "description": "HAVN BF360 Flow Black/White ATX TG Casing",
+        "unitPrice": 219,
+        "quantity": 1
+      },
+      {
+        "description": "APNX V1 Black/White Dual Chamber TG ATX Casing",
+        "unitPrice": 85,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial PC4 3200MHz Single Stick Sodimm Ram - 109 199",
+        "unitPrice": 329,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 1702,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600025",
+    "deliveryOrderNo": "DO202600025",
+    "customerName": "Adrian Ong",
+    "customerPhone": "+65 80000024",
+    "customerPhoneDigits": "6580000024",
+    "customerEmail": "adrian.ong@example.com",
+    "deliveryAddress": "269 Bukit Panjang Road, #25-13, Singapore 530567",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 17:00",
+    "eta": "2026-09-10 16:30",
+    "status": "Scheduled",
+    "driverName": "Kevin Goh",
+    "driverPhone": "+65 9000 1005",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Team T-Force G70 Pro 7400MB/s M.2 GEN4 PCIe NVMe",
+        "unitPrice": 299,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial T500 Pro 7400MB/s Gen4 Nvme M.2 Nmve M.2",
+        "unitPrice": 209,
+        "quantity": 1
+      },
+      {
+        "description": "DarkFlash DB330M Mesh Black TG m-ATX Casing",
+        "unitPrice": 45,
+        "quantity": 1
+      },
+      {
+        "description": "Design Ridge ITX Casing",
+        "unitPrice": 197,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5060 8Gb Gaming Trio OC Triple Fan GDDR7",
+        "unitPrice": 739,
+        "quantity": 1
+      },
+      {
+        "description": "Gigabyte GeForce RTX5090 Gaming OC 32GB Triple Fan GDDR7",
+        "unitPrice": 6759,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 8248,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600026",
+    "deliveryOrderNo": "DO202600026",
+    "customerName": "Beatrice Ho",
+    "customerPhone": "+65 80000025",
+    "customerPhoneDigits": "6580000025",
+    "customerEmail": "beatrice.ho@example.com",
+    "deliveryAddress": "276 Jurong East Street, #01-16, Singapore 540678",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 09:30",
+    "eta": "2026-09-10 09:00",
+    "status": "Confirmed",
+    "driverName": "Andrew Lee",
+    "driverPhone": "+65 9000 1006",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Msi GeForce RTX5070 12Gb Gaming Trio OC Triple Fan GDDR7",
+        "unitPrice": 1369,
+        "quantity": 1
+      },
+      {
+        "description": "Adata SE880 2000MB/s Portable Ssd(5yrs)",
+        "unitPrice": 289,
+        "quantity": 1
+      },
+      {
+        "description": "Gigabyte C301G Argb Black Airflow TG E-Atx Casin1g",
+        "unitPrice": 5,
+        "quantity": 1
+      },
+      {
+        "description": "Leadtek Nvidia RTX 4000 ADA GEN ATX 20GB GDDR6",
+        "unitPrice": 2289,
+        "quantity": 1
+      },
+      {
+        "description": "FD Meshify 3 Black TG Light Tint ATX Casing",
+        "unitPrice": 225,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung 9100 Pro 14700MB/s Ssd(8TB $2759)",
+        "unitPrice": 759,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 4936,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600027",
+    "deliveryOrderNo": "DO202600027",
+    "customerName": "Caleb Chan",
+    "customerPhone": "+65 80000026",
+    "customerPhoneDigits": "6580000026",
+    "customerEmail": "caleb.chan@example.com",
+    "deliveryAddress": "283 Tampines Avenue, #02-19, Singapore 510789",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 11:00",
+    "eta": "2026-09-10 10:30",
+    "status": "Out for Delivery",
+    "driverName": "Farid Rahman",
+    "driverPhone": "+65 9000 1007",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Asus GeForce Tuf Gaming RTX5080 O16G Gaming Triple Fan GDDR7",
+        "unitPrice": 2689,
+        "quantity": 1
+      },
+      {
+        "description": "Asus Geforce Rog Strix RTX5070 O12G Gaming Triple Fan GDDR7",
+        "unitPrice": 1499,
+        "quantity": 1
+      },
+      {
+        "description": "Leadtek Nvidia RTX Pro 4500 BlackWell Gen 32Gb GDDR7",
+        "unitPrice": 8109,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial T710 Gen5 14900MB/s NVMe M.2 Ssd(5Yrs)",
+        "unitPrice": 799,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GT710 2GB GDDR5",
+        "unitPrice": 99,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial X9 Pro Portable Ssd",
+        "unitPrice": 999,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 14194,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600028",
+    "deliveryOrderNo": "DO202600028",
+    "customerName": "Daphne Yap",
+    "customerPhone": "+65 80000027",
+    "customerPhoneDigits": "6580000027",
+    "customerEmail": "daphne.yap@example.com",
+    "deliveryAddress": "290 Woodlands Street, #03-02, Singapore 820890",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 13:30",
+    "eta": "2026-09-10 13:00",
+    "status": "In Transit",
+    "driverName": "Benjamin Chua",
+    "driverPhone": "+65 9000 1008",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Asus GeForce Proart RTX5080 O16G Triple Fan OC GDDR7",
+        "unitPrice": 2639,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial T710 Gen5 14900MB/s NVMe M.2 Ssd(5Yrs)",
+        "unitPrice": 799,
+        "quantity": 1
+      },
+      {
+        "description": "Team Group CX2 2.5\"Sata 540MB/s Sata Ssd(3yrs)",
+        "unitPrice": 149,
+        "quantity": 1
+      },
+      {
+        "description": "FD Torrent Black Solid Panel Casing",
+        "unitPrice": 259,
+        "quantity": 1
+      },
+      {
+        "description": "Powercolor Amd Radeon Hellhound RX9060XT 8GB OC Triple Fan DRR6",
+        "unitPrice": 509,
+        "quantity": 1
+      },
+      {
+        "description": "Team T-Force G70 Pro 7400MB/s M.2 GEN4 PCIe NVMe",
+        "unitPrice": 299,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 4654,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600029",
+    "deliveryOrderNo": "DO202600029",
+    "customerName": "Edwin Tan",
+    "customerPhone": "+65 80000028",
+    "customerPhoneDigits": "6580000028",
+    "customerEmail": "edwin.tan@example.com",
+    "deliveryAddress": "297 Hougang Avenue, #04-05, Singapore 460901",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 15:00",
+    "eta": "2026-09-10 14:30",
+    "status": "Delivered",
+    "driverName": "Ryan Koh",
+    "driverPhone": "+65 9000 1009",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Crucial BX500 2.5\"Sata SSD(3yrs)",
+        "unitPrice": 169,
+        "quantity": 1
+      },
+      {
+        "description": "PowerColor Amd Radeon HellHound White RX9060XT 16GB OC Triple Fan GDDR6",
+        "unitPrice": 699,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung T7 Portable SSD (3yrs wty)",
+        "unitPrice": 359,
+        "quantity": 1
+      },
+      {
+        "description": "Asus Tuf Gaming Amd Radeon RX 7800XT O16G White Triple Fan GDDR6",
+        "unitPrice": 893,
+        "quantity": 1
+      },
+      {
+        "description": "M Faasntser MasterBox NR200P TG ITX",
+        "unitPrice": 117,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GeForce Proart RTX5070Ti O16G Triple Fan OC GDDR7",
+        "unitPrice": 1849,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 4086,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600030",
+    "deliveryOrderNo": "DO202600030",
+    "customerName": "Faith Lim",
+    "customerPhone": "+65 80000029",
+    "customerPhoneDigits": "6580000029",
+    "customerEmail": "faith.lim@example.com",
+    "deliveryAddress": "304 Sengkang East Way, #05-08, Singapore 570012",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 17:30",
+    "eta": "2026-09-10 17:00",
+    "status": "Delivery Delayed",
+    "driverName": "Nicholas Wong",
+    "driverPhone": "+65 9000 1010",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Corsair iCUE 5000X Rgb TG Casing",
+        "unitPrice": 243,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial X10 Pro Portable Ssd",
+        "unitPrice": 1029,
+        "quantity": 1
+      },
+      {
+        "description": "P200A DRGB TG ITX Casing",
+        "unitPrice": 59,
+        "quantity": 1
+      },
+      {
+        "description": "RTX 5060 8GB $ 1509",
+        "unitPrice": 21,
+        "quantity": 1
+      },
+      {
+        "description": "4TB M.2 NVMe SSD,USB-Cx4,10GBE LAN 16GB Ram +512GB SSD +2.5G Dual Lan-M",
+        "unitPrice": 6,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5060Ti 8Gb Ventus 3X OC Triple Fan GDDR7",
+        "unitPrice": 879,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 2237,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600031",
+    "deliveryOrderNo": "DO202600031",
+    "customerName": "Gavin Goh",
+    "customerPhone": "+65 80000030",
+    "customerPhoneDigits": "6580000030",
+    "customerEmail": "gavin.goh@example.com",
+    "deliveryAddress": "311 Pasir Ris Drive, #06-11, Singapore 310123",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 09:00",
+    "eta": "2026-09-10 08:30",
+    "status": "Scheduled",
+    "driverName": "Daniel Wong",
+    "driverPhone": "+65 9000 1001",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Msi GeForce RTX5060Ti 8GB Gaming Trio OC Triple Fan GDDR7",
+        "unitPrice": 909,
+        "quantity": 1
+      },
+      {
+        "description": "Asus Amd Radeon Prime RX9070 O16G Evo Triple Fan GDDR6",
+        "unitPrice": 869,
+        "quantity": 1
+      },
+      {
+        "description": "SSUPD Meshroom S ITX Airflow Mesh Black Casing",
+        "unitPrice": 228,
+        "quantity": 1
+      },
+      {
+        "description": "APNX V1 Black/White Dual Chamber TG ATX Casing",
+        "unitPrice": 85,
+        "quantity": 1
+      },
+      {
+        "description": "Galax Geforce RTX5070Ti OC 16GB Triple Fan GDDR7 PE",
+        "unitPrice": 1769,
+        "quantity": 1
+      },
+      {
+        "description": "Team Group CX2 2.5\"Sata 540MB/s Sata Ssd(3yrs)",
+        "unitPrice": 229,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 4089,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600032",
+    "deliveryOrderNo": "DO202600032",
+    "customerName": "Hazel Ng",
+    "customerPhone": "+65 80000031",
+    "customerPhoneDigits": "6580000031",
+    "customerEmail": "hazel.ng@example.com",
+    "deliveryAddress": "318 Punggol Field, #07-14, Singapore 120234",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 11:30",
+    "eta": "2026-09-10 11:00",
+    "status": "Confirmed",
+    "driverName": "Ravi Kumar",
+    "driverPhone": "+65 9000 1002",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "SK Hynix Platinum P41 SSD 7000MB/s Gen4 NVME M.2",
+        "unitPrice": 699,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5060Ti 8Gb Shadow 2X OC Plus Dual Fan GDDR7",
+        "unitPrice": 859,
+        "quantity": 1
+      },
+      {
+        "description": "Leadtek Nvidia RTX 2000 ADA Gen LP 16Gb GDDR6",
+        "unitPrice": 1259,
+        "quantity": 1
+      },
+      {
+        "description": "Leadtek Nvidia RTX 4000 ADA GEN LP 20GB GDDR6",
+        "unitPrice": 2169,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung 990 Evo Plus 7250MB/s Gen4 Nvme M.2(5yrs)",
+        "unitPrice": 609,
+        "quantity": 1
+      },
+      {
+        "description": "Galax Geforce RTX5080 WHITE OC 16GB Triple Fan GDDR7 M",
+        "unitPrice": 2569,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 8164,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600033",
+    "deliveryOrderNo": "DO202600033",
+    "customerName": "Isaac Koh",
+    "customerPhone": "+65 80000032",
+    "customerPhoneDigits": "6580000032",
+    "customerEmail": "isaac.koh@example.com",
+    "deliveryAddress": "325 Bedok North Road, #08-17, Singapore 140345",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 13:00",
+    "eta": "2026-09-10 12:30",
+    "status": "Out for Delivery",
+    "driverName": "Jason Lim",
+    "driverPhone": "+65 9000 1003",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Gigabyte Amd Radeon RX9070 Gaming OC 16G Triple Fan GDDR6",
+        "unitPrice": 979,
+        "quantity": 1
+      },
+      {
+        "description": "FS6812X 12-Bay M.2 Nvme Nas",
+        "unitPrice": 2169,
+        "quantity": 1
+      },
+      {
+        "description": "Kingston Fury Renegade HeatSink 7300MB/s Nvme SSD",
+        "unitPrice": 459,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial X9 Portable Ssd",
+        "unitPrice": 609,
+        "quantity": 1
+      },
+      {
+        "description": "Team Group CX2 2.5\"Sata 540MB/s Sata Ssd(3yrs)",
+        "unitPrice": 149,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial T710 Gen5 14900MB/s NVMe M.2 Ssd(5Yrs)",
+        "unitPrice": 1389,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 5754,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600034",
+    "deliveryOrderNo": "DO202600034",
+    "customerName": "Jasmine Lee",
+    "customerPhone": "+65 80000033",
+    "customerPhoneDigits": "6580000033",
+    "customerEmail": "jasmine.lee@example.com",
+    "deliveryAddress": "332 Bishan Street, #09-20, Singapore 550456",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 15:30",
+    "eta": "2026-09-10 15:00",
+    "status": "In Transit",
+    "driverName": "Marcus Tan",
+    "driverPhone": "+65 9000 1004",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "RTX5070 12GB",
+        "unitPrice": 2729,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5060 8Gb Gaming OC Twin Fan GDDR7",
+        "unitPrice": 719,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5090 32GB Suprim Liquid SOC GDDR7",
+        "unitPrice": 7959,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GT710 2GB GDDR5",
+        "unitPrice": 99,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5060Ti 8GB Gaming OC Twin Fan GDDR7",
+        "unitPrice": 899,
+        "quantity": 1
+      },
+      {
+        "description": "Team T-Force MP44L 5000MB/s Gen4 Nvme M.2(5yrs)",
+        "unitPrice": 160,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 12565,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600035",
+    "deliveryOrderNo": "DO202600035",
+    "customerName": "Keith Chua",
+    "customerPhone": "+65 80000034",
+    "customerPhoneDigits": "6580000034",
+    "customerEmail": "keith.chua@example.com",
+    "deliveryAddress": "339 Toa Payoh Lorong, #10-03, Singapore 760567",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 17:00",
+    "eta": "2026-09-10 16:30",
+    "status": "Delivered",
+    "driverName": "Kevin Goh",
+    "driverPhone": "+65 9000 1005",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Kingston SNV3S Gen4 Nvme M.2 Ssd(3yrs)",
+        "unitPrice": 165,
+        "quantity": 1
+      },
+      {
+        "description": "Asus Rog Chakram Wireless BT Rgb Gaming",
+        "unitPrice": 198,
+        "quantity": 1
+      },
+      {
+        "description": "APNX V1 Black/White Dual Chamber TG ATX Casing",
+        "unitPrice": 85,
+        "quantity": 1
+      },
+      {
+        "description": "Gigabyte Amd Radeon RX9070XT Aorus Elite OC 16G Triple Fan GDDR6",
+        "unitPrice": 1249,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5080 16Gb Ventus 3X OC Plus Triple Fan GDDR7",
+        "unitPrice": 2669,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung T7 Touch Portable SSD (3yrs wty)",
+        "unitPrice": 729,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 5095,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600036",
+    "deliveryOrderNo": "DO202600036",
+    "customerName": "Lydia Wong",
+    "customerPhone": "+65 80000035",
+    "customerPhoneDigits": "6580000035",
+    "customerEmail": "lydia.wong@example.com",
+    "deliveryAddress": "346 Clementi Avenue, #11-06, Singapore 560678",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 09:30",
+    "eta": "2026-09-10 09:00",
+    "status": "Delivery Delayed",
+    "driverName": "Andrew Lee",
+    "driverPhone": "+65 9000 1006",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Crucial BX500 2.5\"Sata SSD(3yrs)",
+        "unitPrice": 169,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5060Ti 16Gb Shadow 2X OC Plus Dual Fan GDDR7",
+        "unitPrice": 1159,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial T500 Pro 7400MB/s Gen4 Nvme M.2 Nmve M.2",
+        "unitPrice": 289,
+        "quantity": 1
+      },
+      {
+        "description": "Corsair 7000D Airflow Type-C Tower TG casing",
+        "unitPrice": 305,
+        "quantity": 1
+      },
+      {
+        "description": "U9 ROG $11,888 RTX",
+        "unitPrice": 5090,
+        "quantity": 1
+      },
+      {
+        "description": "SPARKLE INTEL ARC PRO B60 BLOWER 24GB GDD6 3Y",
+        "unitPrice": 1088,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 8100,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600037",
+    "deliveryOrderNo": "DO202600037",
+    "customerName": "Marcus Teo",
+    "customerPhone": "+65 80000036",
+    "customerPhoneDigits": "6580000036",
+    "customerEmail": "marcus.teo@example.com",
+    "deliveryAddress": "353 Bukit Panjang Road, #12-09, Singapore 680789",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 11:00",
+    "eta": "2026-09-10 10:30",
+    "status": "Scheduled",
+    "driverName": "Farid Rahman",
+    "driverPhone": "+65 9000 1007",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Gigabyte GeForce RTX5080 Aorus Master 16GB OC Triple Fan GDDR7",
+        "unitPrice": 2599,
+        "quantity": 1
+      },
+      {
+        "description": "XASTRA QW505M White Argb TG Casing(6Fans)",
+        "unitPrice": 85,
+        "quantity": 1
+      },
+      {
+        "description": "FD Torrent Black TG ATX Casing",
+        "unitPrice": 278,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial X9 Pro Portable Ssd",
+        "unitPrice": 999,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5080 16GB Gaming Trio OC Black Triple Fan GDDR7",
+        "unitPrice": 2739,
+        "quantity": 1
+      },
+      {
+        "description": "RTX5070 12GB",
+        "unitPrice": 2729,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 9429,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600038",
+    "deliveryOrderNo": "DO202600038",
+    "customerName": "Natalie Low",
+    "customerPhone": "+65 80000037",
+    "customerPhoneDigits": "6580000037",
+    "customerEmail": "natalie.low@example.com",
+    "deliveryAddress": "360 Jurong East Street, #13-12, Singapore 650890",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 13:30",
+    "eta": "2026-09-10 13:00",
+    "status": "Confirmed",
+    "driverName": "Benjamin Chua",
+    "driverPhone": "+65 9000 1008",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Asus Prime AP202 Black Curved TG m-ATX Casing",
+        "unitPrice": 95,
+        "quantity": 1
+      },
+      {
+        "description": "Kioxia Exceria PRO G2 14900MB/s Gen5 Nvme M.2",
+        "unitPrice": 1029,
+        "quantity": 1
+      },
+      {
+        "description": "Kioxia Exceria SATA 2.5\"480GB Sata Ssd",
+        "unitPrice": 129,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung 9100 Pro 14700MB/s Ssd(8TB $2759)",
+        "unitPrice": 759,
+        "quantity": 1
+      },
+      {
+        "description": "Powercolor Amd Radeon Reaper White RX9060XT 16GB Twin Fan GDDR6",
+        "unitPrice": 609,
+        "quantity": 1
+      },
+      {
+        "description": "Powercolor Amd Radeon Reaper RX9060XT 8GB Twin Fan GDDR6",
+        "unitPrice": 489,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 3110,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600039",
+    "deliveryOrderNo": "DO202600039",
+    "customerName": "Oscar Ong",
+    "customerPhone": "+65 80000038",
+    "customerPhoneDigits": "6580000038",
+    "customerEmail": "oscar.ong@example.com",
+    "deliveryAddress": "367 Tampines Avenue, #14-15, Singapore 330901",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 15:00",
+    "eta": "2026-09-10 14:30",
+    "status": "Out for Delivery",
+    "driverName": "Ryan Koh",
+    "driverPhone": "+65 9000 1009",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Leadtek Nvidia RTX Pro 4500 BlackWell Gen 32Gb GDDR7",
+        "unitPrice": 8109,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung T9 Portable Ssd(3yrs)",
+        "unitPrice": 379,
+        "quantity": 1
+      },
+      {
+        "description": "HAVN HS 420 DOOM Hybrid Base Edition TG Casing",
+        "unitPrice": 439,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung 9100 Pro 14700MB/s Ssd(8TB $2759)",
+        "unitPrice": 1590,
+        "quantity": 1
+      },
+      {
+        "description": "KINGBANK KP260 Plus 512Gb Nvme M.2 Ssd",
+        "unitPrice": 165,
+        "quantity": 1
+      },
+      {
+        "description": "Galax Geforce RTX5070 OC Black 12GB Triple Fan GDDR7 W",
+        "unitPrice": 1289,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 11971,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600040",
+    "deliveryOrderNo": "DO202600040",
+    "customerName": "Priscilla Ho",
+    "customerPhone": "+65 80000039",
+    "customerPhoneDigits": "6580000039",
+    "customerEmail": "priscilla.ho@example.com",
+    "deliveryAddress": "374 Woodlands Street, #15-18, Singapore 440012",
+    "deliveryDate": "2026-09-10",
+    "arrangedDeliveryTime": "2026-09-10 17:30",
+    "eta": "2026-09-10 17:00",
+    "status": "In Transit",
+    "driverName": "Nicholas Wong",
+    "driverPhone": "+65 9000 1010",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "RTX 5060 8GB $ 1509",
+        "unitPrice": 21,
+        "quantity": 1
+      },
+      {
+        "description": "Adata SC750 1050MB/s Portable Ssd(5yrs)",
+        "unitPrice": 249,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial T705 Gen5 13600MB/s NVMe M.2 Ssd(5Yrs)",
+        "unitPrice": 339,
+        "quantity": 1
+      },
+      {
+        "description": "Corsair iCUE 5000X Rgb TG Casing",
+        "unitPrice": 243,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung T7 Touch Portable SSD (3yrs wty)",
+        "unitPrice": 729,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5080 16Gb Ventus 3X OC White Triple Fan GDDR7",
+        "unitPrice": 2709,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 4290,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600041",
+    "deliveryOrderNo": "DO202600041",
+    "customerName": "Quentin Chan",
+    "customerPhone": "+65 80000040",
+    "customerPhoneDigits": "6580000040",
+    "customerEmail": "quentin.chan@example.com",
+    "deliveryAddress": "381 Hougang Avenue, #16-01, Singapore 560123",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 09:00",
+    "eta": "2026-09-11 08:30",
+    "status": "Delivered",
+    "driverName": "Daniel Wong",
+    "driverPhone": "+65 9000 1001",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Gigabyte GeForce RTX5080 Aorus Master ICE 16GB OC Triple Fan GDDR7",
+        "unitPrice": 2609,
+        "quantity": 1
+      },
+      {
+        "description": "KIOXIA EXCERIA G3 R10000MB/s Gen5 Nvme M.2",
+        "unitPrice": 475,
+        "quantity": 1
+      },
+      {
+        "description": "Leadtek Nvidia RTX Pro 4000 BlackWell Gen/SFF 24Gb GDDR7",
+        "unitPrice": 5159,
+        "quantity": 1
+      },
+      {
+        "description": "Nvidia Quadro A1000 8GB GDDR6",
+        "unitPrice": 949,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung T9 Portable Ssd(3yrs)",
+        "unitPrice": 666,
+        "quantity": 1
+      },
+      {
+        "description": "Galax Geforce RTX5070 OC 12GB Twin Fan GDDR7 D",
+        "unitPrice": 1229,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 11087,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600042",
+    "deliveryOrderNo": "DO202600042",
+    "customerName": "Rebecca Yap",
+    "customerPhone": "+65 80000041",
+    "customerPhoneDigits": "6580000041",
+    "customerEmail": "rebecca.yap@example.com",
+    "deliveryAddress": "388 Sengkang East Way, #17-04, Singapore 600234",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 11:30",
+    "eta": "2026-09-11 11:00",
+    "status": "Delivery Delayed",
+    "driverName": "Ravi Kumar",
+    "driverPhone": "+65 9000 1002",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Crucial E100 5000MB/s Gen4 Nvme M.2 Ssd(3yrs)",
+        "unitPrice": 169,
+        "quantity": 1
+      },
+      {
+        "description": "Kioxia Exceria Plus G4 10000MB/s Gen5 Nvme M.2",
+        "unitPrice": 299,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5060Ti 8Gb Ventus 3X OC Triple Fan GDDR7",
+        "unitPrice": 879,
+        "quantity": 1
+      },
+      {
+        "description": "RTX 5070TI 16GB $ 3599",
+        "unitPrice": 18,
+        "quantity": 1
+      },
+      {
+        "description": "4TB M.2 NVMe PCIe SSD RTX™5080-16GB /RTX™5070Ti-12GB GDDR",
+        "unitPrice": 7,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5070 12Gb Gaming Trio OC Triple Fan GDDR7",
+        "unitPrice": 1369,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 2741,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600043",
+    "deliveryOrderNo": "DO202600043",
+    "customerName": "Steven Tan",
+    "customerPhone": "+65 80000042",
+    "customerPhoneDigits": "6580000042",
+    "customerEmail": "steven.tan@example.com",
+    "deliveryAddress": "395 Pasir Ris Drive, #18-07, Singapore 520345",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 13:00",
+    "eta": "2026-09-11 12:30",
+    "status": "Scheduled",
+    "driverName": "Jason Lim",
+    "driverPhone": "+65 9000 1003",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Asus Dual Amd Radeon RX 7800XT O16G Triple Fan GDDR6",
+        "unitPrice": 719,
+        "quantity": 1
+      },
+      {
+        "description": "Kingston Fury Renegade HeatSink 7300MB/s Nvme SSD",
+        "unitPrice": 459,
+        "quantity": 1
+      },
+      {
+        "description": "Kioxia Exceria PRO G2 14900MB/s Gen5 Nvme M.2",
+        "unitPrice": 1029,
+        "quantity": 1
+      },
+      {
+        "description": "Leadtek Nvidia RTX Pro 4000 BlackWell Gen/SFF 24Gb GDDR7",
+        "unitPrice": 5159,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial X9 Pro Portable Ssd",
+        "unitPrice": 999,
+        "quantity": 1
+      },
+      {
+        "description": "FD POP 2 Air Rgb Black TG ATX Casing",
+        "unitPrice": 152,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 8517,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600044",
+    "deliveryOrderNo": "DO202600044",
+    "customerName": "Theresa Lim",
+    "customerPhone": "+65 80000043",
+    "customerPhoneDigits": "6580000043",
+    "customerEmail": "theresa.lim@example.com",
+    "deliveryAddress": "402 Punggol Field, #19-10, Singapore 730456",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 15:30",
+    "eta": "2026-09-11 15:00",
+    "status": "Confirmed",
+    "driverName": "Marcus Tan",
+    "driverPhone": "+65 9000 1004",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Crucial T500 Pro Gen4 Heatsink Nvme M.2 Nmve M.2",
+        "unitPrice": 319,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial X10 Pro Portable Ssd",
+        "unitPrice": 1029,
+        "quantity": 1
+      },
+      {
+        "description": "RTX 5070TI 16GB $ 3689",
+        "unitPrice": 27,
+        "quantity": 1
+      },
+      {
+        "description": "KINGBANK KP260 Plus 512Gb Nvme M.2 Ssd",
+        "unitPrice": 165,
+        "quantity": 1
+      },
+      {
+        "description": "Gigabyte GeForce RTX5080 Aorus Infinity 16GB Triple Fan GDDR7",
+        "unitPrice": 2699,
+        "quantity": 1
+      },
+      {
+        "description": "Asus Amd Radeon RX 7900XT 20Gb Reference Triple Fan GDDR6",
+        "unitPrice": 1175,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 5414,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600045",
+    "deliveryOrderNo": "DO202600045",
+    "customerName": "Umar Goh",
+    "customerPhone": "+65 80000044",
+    "customerPhoneDigits": "6580000044",
+    "customerEmail": "umar.goh@example.com",
+    "deliveryAddress": "409 Bedok North Road, #20-13, Singapore 530567",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 17:00",
+    "eta": "2026-09-11 16:30",
+    "status": "Out for Delivery",
+    "driverName": "Kevin Goh",
+    "driverPhone": "+65 9000 1005",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "NZXT H6 Flow Rgb Black/White TG Casing",
+        "unitPrice": 195,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial P310 6600/7100MB/s Nvme Gen4 M.2 Ssd(5yrs)",
+        "unitPrice": 489,
+        "quantity": 1
+      },
+      {
+        "description": "Kioxia Exceria Basic 7200MB/s Gen4 Nvme M.2 Ssd (5yrs)",
+        "unitPrice": 245,
+        "quantity": 1
+      },
+      {
+        "description": "PowerColor Amd Radeon HellHound RX9060XT 16GB OC Triple Fan GDDR6",
+        "unitPrice": 679,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5060Ti 16GB Gaming Trio OC Triple Fan GDDR7",
+        "unitPrice": 1209,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung T7 Touch Portable SSD (3yrs wty)",
+        "unitPrice": 729,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 3546,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600046",
+    "deliveryOrderNo": "DO202600046",
+    "customerName": "Wendy Ng",
+    "customerPhone": "+65 80000045",
+    "customerPhoneDigits": "6580000045",
+    "customerEmail": "wendy.ng@example.com",
+    "deliveryAddress": "416 Bishan Street, #21-16, Singapore 540678",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 09:30",
+    "eta": "2026-09-11 09:00",
+    "status": "In Transit",
+    "driverName": "Andrew Lee",
+    "driverPhone": "+65 9000 1006",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "FD North Charcoal Black/White Casing",
+        "unitPrice": 215,
+        "quantity": 1
+      },
+      {
+        "description": "Team T-Force MP44L 5000MB/s Gen4 Nvme M.2(5yrs)",
+        "unitPrice": 160,
+        "quantity": 1
+      },
+      {
+        "description": "Sk Hynix Beetle X31 Portable Ssd(3yrs)",
+        "unitPrice": 169,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5060 8Gb Gaming Trio OC Triple Fan GDDR7",
+        "unitPrice": 739,
+        "quantity": 1
+      },
+      {
+        "description": "Asus Tuf Gaming Amd Radeon RX 7800XT O16G White Triple Fan GDDR6",
+        "unitPrice": 893,
+        "quantity": 1
+      },
+      {
+        "description": "Filavnerstone Fara 312Z Black Argb TG m-ATX Casing",
+        "unitPrice": 82,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 2258,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600047",
+    "deliveryOrderNo": "DO202600047",
+    "customerName": "Alex Koh",
+    "customerPhone": "+65 80000046",
+    "customerPhoneDigits": "6580000046",
+    "customerEmail": "alex.koh@example.com",
+    "deliveryAddress": "423 Toa Payoh Lorong, #22-19, Singapore 510789",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 11:00",
+    "eta": "2026-09-11 10:30",
+    "status": "Delivered",
+    "driverName": "Farid Rahman",
+    "driverPhone": "+65 9000 1007",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Asus Rog Chakram Wireless BT Rgb Gaming",
+        "unitPrice": 198,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung 870 Evo 2.5\"Sata Ssd(5yrs)",
+        "unitPrice": 859,
+        "quantity": 1
+      },
+      {
+        "description": "Asus Geforce Rog Strix RTX5070 O12G Gaming Triple Fan GDDR7",
+        "unitPrice": 1499,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung 870 Evo 2.5\"Sata Ssd(5yrs)",
+        "unitPrice": 1989,
+        "quantity": 1
+      },
+      {
+        "description": "Galax Geforce RTX5070 OC Black 12GB Triple Fan GDDR7 W",
+        "unitPrice": 1289,
+        "quantity": 1
+      },
+      {
+        "description": "Corsair iCUE 5000X Rgb TG Casing",
+        "unitPrice": 243,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 6077,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600048",
+    "deliveryOrderNo": "DO202600048",
+    "customerName": "Bianca Lee",
+    "customerPhone": "+65 80000047",
+    "customerPhoneDigits": "6580000047",
+    "customerEmail": "bianca.lee@example.com",
+    "deliveryAddress": "430 Clementi Avenue, #23-02, Singapore 820890",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 13:30",
+    "eta": "2026-09-11 13:00",
+    "status": "Delivery Delayed",
+    "driverName": "Benjamin Chua",
+    "driverPhone": "+65 9000 1008",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "CRUCIAL / KINGSTON DDR5-5600MHz CL46 309 569 939",
+        "unitPrice": 1139,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung 990 Pro Heatsink Nvme 2.0 7400MB/s M.2(5yrs)",
+        "unitPrice": 1029,
+        "quantity": 1
+      },
+      {
+        "description": "32GB DDR5 / 128GB LP-DDR5 RAM 1x 2280 1x M.2 2242 SSD NVMe PCIe Gen4 x",
+        "unitPrice": 4,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GeForce Tuf Gaming RTX5070Ti O16G BTF White Gaming Triple Fan GDDR7",
+        "unitPrice": 1849,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GeForce Prime RTX5060Ti O8G OC Triple Fan GDDR7",
+        "unitPrice": 869,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5060Ti 8GB Gaming OC Twin Fan GDDR7",
+        "unitPrice": 899,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 5789,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600049",
+    "deliveryOrderNo": "DO202600049",
+    "customerName": "Christopher Chua",
+    "customerPhone": "+65 80000048",
+    "customerPhoneDigits": "6580000048",
+    "customerEmail": "christopher.chua@example.com",
+    "deliveryAddress": "437 Bukit Panjang Road, #24-05, Singapore 460901",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 15:00",
+    "eta": "2026-09-11 14:30",
+    "status": "Scheduled",
+    "driverName": "Ryan Koh",
+    "driverPhone": "+65 9000 1009",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Asus Prime AP202 Black Curved TG m-ATX Casing",
+        "unitPrice": 95,
+        "quantity": 1
+      },
+      {
+        "description": "16GB Ram +512GB SSD +2.5G Dual Lan-G11 NVIDIA® RTX™5080-16GB GDDR",
+        "unitPrice": 7,
+        "quantity": 1
+      },
+      {
+        "description": "RTX 5070 12GB $ 2219",
+        "unitPrice": 24,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5060 8Gb Ventus 2X OC Twin Fan GDDR7",
+        "unitPrice": 679,
+        "quantity": 1
+      },
+      {
+        "description": "SK Hynix Platinum P41 SSD 7000MB/s Gen4 NVME M.2",
+        "unitPrice": 699,
+        "quantity": 1
+      },
+      {
+        "description": "Gigabyte GeForce RTX5090 Gaming OC 32GB Triple Fan GDDR7",
+        "unitPrice": 6759,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 8263,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600050",
+    "deliveryOrderNo": "DO202600050",
+    "customerName": "Denise Wong",
+    "customerPhone": "+65 80000049",
+    "customerPhoneDigits": "6580000049",
+    "customerEmail": "denise.wong@example.com",
+    "deliveryAddress": "444 Jurong East Street, #25-08, Singapore 570012",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 17:30",
+    "eta": "2026-09-11 17:00",
+    "status": "Confirmed",
+    "driverName": "Nicholas Wong",
+    "driverPhone": "+65 9000 1010",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Crucial T710 Gen5 14900MB/s NVMe M.2 Ssd(5Yrs)",
+        "unitPrice": 365,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GeForce Proart RTX5070Ti O16G Triple Fan OC GDDR7",
+        "unitPrice": 1849,
+        "quantity": 1
+      },
+      {
+        "description": "PowerColor Amd Radeon HellHound Spectral White RX9070XT 16GB OC Triple Fan GDDR6",
+        "unitPrice": 1079,
+        "quantity": 1
+      },
+      {
+        "description": "Thermaltake Tower 600 Black TG ATX Casing",
+        "unitPrice": 225,
+        "quantity": 1
+      },
+      {
+        "description": "225 PN65-S5014AD Intel U5-125H 16GB DDR5 512GB SSD TPM Win",
+        "unitPrice": 11,
+        "quantity": 1
+      },
+      {
+        "description": "RTX 5060 8GB $ 1789",
+        "unitPrice": 33,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 3562,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600051",
+    "deliveryOrderNo": "DO202600051",
+    "customerName": "Eric Teo",
+    "customerPhone": "+65 80000050",
+    "customerPhoneDigits": "6580000050",
+    "customerEmail": "eric.teo@example.com",
+    "deliveryAddress": "451 Tampines Avenue, #01-11, Singapore 310123",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 09:00",
+    "eta": "2026-09-11 08:30",
+    "status": "Out for Delivery",
+    "driverName": "Daniel Wong",
+    "driverPhone": "+65 9000 1001",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "RTX 5070TI 16GB $ 3689",
+        "unitPrice": 27,
+        "quantity": 1
+      },
+      {
+        "description": "SK Hynix Platinum P41 SSD 7000MB/s Gen4 NVME M.2",
+        "unitPrice": 699,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5080 16Gb Ventus 3X OC Plus Triple Fan GDDR7",
+        "unitPrice": 2669,
+        "quantity": 1
+      },
+      {
+        "description": "Msi GeForce RTX5080 16Gb Ventus 3X OC White Triple Fan GDDR7",
+        "unitPrice": 2709,
+        "quantity": 1
+      },
+      {
+        "description": "Gigabyte GeForce RTX5080 Aero OC 16GB Triple Fan GDDR7",
+        "unitPrice": 2579,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial X10 Pro Portable Ssd",
+        "unitPrice": 1029,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 9712,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600052",
+    "deliveryOrderNo": "DO202600052",
+    "customerName": "Fiona Low",
+    "customerPhone": "+65 80000051",
+    "customerPhoneDigits": "6580000051",
+    "customerEmail": "fiona.low@example.com",
+    "deliveryAddress": "458 Woodlands Street, #02-14, Singapore 120234",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 11:30",
+    "eta": "2026-09-11 11:00",
+    "status": "In Transit",
+    "driverName": "Ravi Kumar",
+    "driverPhone": "+65 9000 1002",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Asus Tuf Gaming Amd Radeon RX 7800XT O16G White Triple Fan GDDR6",
+        "unitPrice": 893,
+        "quantity": 1
+      },
+      {
+        "description": "Corsair 4000D Airflow Rgb Black Edition TG Casing",
+        "unitPrice": 169,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung 990 Pro Heatsink Nvme 2.0 7400MB/s M.2(5yrs)",
+        "unitPrice": 1029,
+        "quantity": 1
+      },
+      {
+        "description": "FD North XL Charcoal Black/White Atx Casing",
+        "unitPrice": 265,
+        "quantity": 1
+      },
+      {
+        "description": "KIOXIA EXCERIA G3 R10000MB/s Gen5 Nvme M.2",
+        "unitPrice": 475,
+        "quantity": 1
+      },
+      {
+        "description": "PowerColor Amd Radeon HellHound RX9070XT 16GB OC Triple Fan GDDR6",
+        "unitPrice": 1059,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 3890,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600053",
+    "deliveryOrderNo": "DO202600053",
+    "customerName": "Gordon Ong",
+    "customerPhone": "+65 80000052",
+    "customerPhoneDigits": "6580000052",
+    "customerEmail": "gordon.ong@example.com",
+    "deliveryAddress": "465 Hougang Avenue, #03-17, Singapore 140345",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 13:00",
+    "eta": "2026-09-11 12:30",
+    "status": "Delivered",
+    "driverName": "Jason Lim",
+    "driverPhone": "+65 9000 1003",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Msi GeForce RTX5080 16Gb Ventus 3X OC White Triple Fan GDDR7",
+        "unitPrice": 2709,
+        "quantity": 1
+      },
+      {
+        "description": "Design Ridge ITX Casing",
+        "unitPrice": 197,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial T710 Gen5 14900MB/s HeatSink NVMe M.2",
+        "unitPrice": 809,
+        "quantity": 1
+      },
+      {
+        "description": "Crucial X10 Pro Portable Ssd",
+        "unitPrice": 1029,
+        "quantity": 1
+      },
+      {
+        "description": "CRUCIAL / KINGSTON DDR5-4800MHz CL40 (8GB- 305 529",
+        "unitPrice": 1089,
+        "quantity": 1
+      },
+      {
+        "description": "Gigabyte GeForce RTX5090 Aorus Master ICE 32GB OC Triple Fan GDDR7",
+        "unitPrice": 7029,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 12862,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600054",
+    "deliveryOrderNo": "DO202600054",
+    "customerName": "Irene Ho",
+    "customerPhone": "+65 80000053",
+    "customerPhoneDigits": "6580000053",
+    "customerEmail": "irene.ho@example.com",
+    "deliveryAddress": "472 Sengkang East Way, #04-20, Singapore 550456",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 15:30",
+    "eta": "2026-09-11 15:00",
+    "status": "Delivery Delayed",
+    "driverName": "Marcus Tan",
+    "driverPhone": "+65 9000 1004",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Crucial T500 Pro 7400MB/s Gen4 Nvme M.2 Nmve M.2",
+        "unitPrice": 509,
+        "quantity": 1
+      },
+      {
+        "description": "Design Ridge ITX Casing",
+        "unitPrice": 197,
+        "quantity": 1
+      },
+      {
+        "description": "KINGBANK KP260 Plus 512Gb Nvme M.2 Ssd",
+        "unitPrice": 165,
+        "quantity": 1
+      },
+      {
+        "description": "Kioxia Exceria SATA 2.5\"480GB Sata Ssd",
+        "unitPrice": 129,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GeForce Tuf Gaming RTX5060 O8G Gaming OC Triple Fan GDDR7",
+        "unitPrice": 749,
+        "quantity": 1
+      },
+      {
+        "description": "SS 6U RACKMOUNT chassis Support Dual PSU and Triple 360MM Radiator support",
+        "unitPrice": 880,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 2629,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600055",
+    "deliveryOrderNo": "DO202600055",
+    "customerName": "Justin Chan",
+    "customerPhone": "+65 80000054",
+    "customerPhoneDigits": "6580000054",
+    "customerEmail": "justin.chan@example.com",
+    "deliveryAddress": "479 Pasir Ris Drive, #05-03, Singapore 760567",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 17:00",
+    "eta": "2026-09-11 16:30",
+    "status": "Scheduled",
+    "driverName": "Kevin Goh",
+    "driverPhone": "+65 9000 1005",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "FD North Charcoal Black/White Casing",
+        "unitPrice": 215,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GeForce Prime RTX5070 O12G Triple Fan OC GDDR7",
+        "unitPrice": 1259,
+        "quantity": 1
+      },
+      {
+        "description": "Kioxia Exceria Plus G4 10000MB/s Gen5 Nvme M.2",
+        "unitPrice": 299,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung T7 Touch Portable SSD (3yrs wty)",
+        "unitPrice": 729,
+        "quantity": 1
+      },
+      {
+        "description": "16GB Ram +512GB SSD +2.5G Dual Lan-G11 NVIDIA® RTX™5080-16GB GDDR",
+        "unitPrice": 7,
+        "quantity": 1
+      },
+      {
+        "description": "CRUCIAL / KINGSTON DDR5-5600MHz CL46 309 569 939",
+        "unitPrice": 1139,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 3648,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600056",
+    "deliveryOrderNo": "DO202600056",
+    "customerName": "Kelly Yap",
+    "customerPhone": "+65 80000055",
+    "customerPhoneDigits": "6580000055",
+    "customerEmail": "kelly.yap@example.com",
+    "deliveryAddress": "486 Punggol Field, #06-06, Singapore 560678",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 09:30",
+    "eta": "2026-09-11 09:00",
+    "status": "Confirmed",
+    "driverName": "Andrew Lee",
+    "driverPhone": "+65 9000 1006",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Msi GeForce RTX5080 16GB Gaming Trio OC Black Triple Fan GDDR7",
+        "unitPrice": 2739,
+        "quantity": 1
+      },
+      {
+        "description": "Phanteks Evolv X2 Black/White TG ATX Casing",
+        "unitPrice": 189,
+        "quantity": 1
+      },
+      {
+        "description": "Galax Geforce RTX5070Ti GAMER OC 16GB Triple Fan GDDR7 TG",
+        "unitPrice": 1839,
+        "quantity": 1
+      },
+      {
+        "description": "DarkFlash C280 Argb Black(7Fans) TG Atx Casing",
+        "unitPrice": 80,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung 990 Evo Plus 7250MB/s Gen4 Nvme M.2(5yrs)",
+        "unitPrice": 275,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung T7 Shield Portable SSD (3yrs wty)",
+        "unitPrice": 379,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 5501,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600057",
+    "deliveryOrderNo": "DO202600057",
+    "customerName": "Louis Tan",
+    "customerPhone": "+65 80000056",
+    "customerPhoneDigits": "6580000056",
+    "customerEmail": "louis.tan@example.com",
+    "deliveryAddress": "493 Bedok North Road, #07-09, Singapore 680789",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 11:00",
+    "eta": "2026-09-11 10:30",
+    "status": "Out for Delivery",
+    "driverName": "Farid Rahman",
+    "driverPhone": "+65 9000 1007",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Asus GeForce Dual RTX5060Ti O16G White Twin Fan GDDR7",
+        "unitPrice": 1129,
+        "quantity": 1
+      },
+      {
+        "description": "Lian Li Lancool 217 INF Black/White Argb TG Casin1g",
+        "unitPrice": 55,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung T7 Portable SSD (3yrs wty)",
+        "unitPrice": 1429,
+        "quantity": 1
+      },
+      {
+        "description": "Team T-Force MP44L 5000MB/s Gen4 Nvme M.2(5yrs)",
+        "unitPrice": 160,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung 990 Pro Heatsink Nvme 2.0 7400MB/s M.2(5yrs)",
+        "unitPrice": 1029,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GeForce Dual RTX5050 O8G Twin Fan OC GDDR7",
+        "unitPrice": 639,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 4441,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600058",
+    "deliveryOrderNo": "DO202600058",
+    "customerName": "Michelle Lim",
+    "customerPhone": "+65 80000057",
+    "customerPhoneDigits": "6580000057",
+    "customerEmail": "michelle.lim@example.com",
+    "deliveryAddress": "500 Bishan Street, #08-12, Singapore 650890",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 13:30",
+    "eta": "2026-09-11 13:00",
+    "status": "In Transit",
+    "driverName": "Benjamin Chua",
+    "driverPhone": "+65 9000 1008",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Lian Li SUP01 White Airflow TG Casing",
+        "unitPrice": 89,
+        "quantity": 1
+      },
+      {
+        "description": "Team T-Force G70 Pro 7400MB/s M.2 GEN4 PCIe NVMe",
+        "unitPrice": 679,
+        "quantity": 1
+      },
+      {
+        "description": "Asus Rog Chakram Wireless BT Rgb Gaming",
+        "unitPrice": 198,
+        "quantity": 1
+      },
+      {
+        "description": "Intel® Ultra 7 256v 8Core RTX™5080-16GB /RTX™5070Ti-12GB GDDR",
+        "unitPrice": 7,
+        "quantity": 1
+      },
+      {
+        "description": "Sk Hynix Beetle X31 Portable Ssd(3yrs)",
+        "unitPrice": 169,
+        "quantity": 1
+      },
+      {
+        "description": "PowerColor Amd Radeon HellHound RX9070XT 16GB OC Triple Fan GDDR6",
+        "unitPrice": 1059,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 2201,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600059",
+    "deliveryOrderNo": "DO202600059",
+    "customerName": "Noah Goh",
+    "customerPhone": "+65 80000058",
+    "customerPhoneDigits": "6580000058",
+    "customerEmail": "noah.goh@example.com",
+    "deliveryAddress": "507 Toa Payoh Lorong, #09-15, Singapore 330901",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 15:00",
+    "eta": "2026-09-11 14:30",
+    "status": "Delivered",
+    "driverName": "Ryan Koh",
+    "driverPhone": "+65 9000 1009",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "FD Meshify 3 Ambience Pro Rgb Black TG Casing",
+        "unitPrice": 355,
+        "quantity": 1
+      },
+      {
+        "description": "Asus Amd Radeon RX 7900XT 20Gb Reference Triple Fan GDDR6",
+        "unitPrice": 1175,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GeForce Dual RTX5060Ti O8G Twin Fan GDDR7",
+        "unitPrice": 859,
+        "quantity": 1
+      },
+      {
+        "description": "Team Group CX2 2.5\"Sata 540MB/s Sata Ssd(3yrs)",
+        "unitPrice": 229,
+        "quantity": 1
+      },
+      {
+        "description": "Li B4 Wood Black/White m-ATX Casing",
+        "unitPrice": 125,
+        "quantity": 1
+      },
+      {
+        "description": "16GB Ram +512GB SSD +2.5G Dual Lan-G11 NVIDIA® RTX™5080-16GB GDDR",
+        "unitPrice": 7,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 2750,
+    "currency": "SGD"
+  },
+  {
+    "orderNo": "DO202600060",
+    "deliveryOrderNo": "DO202600060",
+    "customerName": "Pearl Ng",
+    "customerPhone": "+65 80000059",
+    "customerPhoneDigits": "6580000059",
+    "customerEmail": "pearl.ng@example.com",
+    "deliveryAddress": "514 Clementi Avenue, #10-18, Singapore 440012",
+    "deliveryDate": "2026-09-11",
+    "arrangedDeliveryTime": "2026-09-11 17:30",
+    "eta": "2026-09-11 17:00",
+    "status": "Delivery Delayed",
+    "driverName": "Nicholas Wong",
+    "driverPhone": "+65 9000 1010",
+    "itemCount": 6,
+    "items": [
+      {
+        "description": "Msi GeForce RTX5060 8Gb Gaming Trio OC Triple Fan GDDR7",
+        "unitPrice": 739,
+        "quantity": 1
+      },
+      {
+        "description": "Gigabyte C301G Argb Black Airflow TG E-Atx Casin1g",
+        "unitPrice": 5,
+        "quantity": 1
+      },
+      {
+        "description": "Gigabyte GeForce RTX5090 Aorus Master Stealth ICE 32GB OC Triple fan GDDR7",
+        "unitPrice": 7089,
+        "quantity": 1
+      },
+      {
+        "description": "Samsung 990 Pro Heatsink Nvme 2.0 7400MB/s M.2(5yrs)",
+        "unitPrice": 769,
+        "quantity": 1
+      },
+      {
+        "description": "Asus GeForce T1 Gaming RTX5060Ti O8G OC Triple Fan GDDR7(Limited Edition)",
+        "unitPrice": 859,
+        "quantity": 1
+      },
+      {
+        "description": "Asus Dual Amd Radeon RX 7800XT O16G Triple Fan GDDR6",
+        "unitPrice": 719,
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 10180,
+    "currency": "SGD"
+  }
+]

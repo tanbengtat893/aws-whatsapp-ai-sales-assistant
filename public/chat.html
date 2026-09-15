@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIS Computer Services - Sales Assistant</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: #eef2f0;
+      color: #111b21;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+      gap: 20px;
+    }
+
+    /* Chat card */
+    .app {
+      width: 400px; max-width: 100%;
+      height: 640px; max-height: 92vh;
+      display: flex; flex-direction: column;
+      background: #efeae2;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.14);
+    }
+    header {
+      background: #075e54; color: #fff; padding: 12px 14px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    header .back { color: #cfeee8; text-decoration: none; font-size: 18px; line-height: 1; }
+    header .avatar {
+      width: 40px; height: 40px; border-radius: 50%; background: #128c7e;
+      display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px;
+    }
+    header h1 { font-size: 15px; margin: 0; display: flex; align-items: center; gap: 6px; }
+    header .check { color: #6fe3c7; font-size: 13px; }
+    header .sub { font-size: 11px; opacity: 0.85; }
+    header .menu-dots { margin-left: auto; color: #cfeee8; font-size: 20px; text-decoration: none; letter-spacing: 1px; }
+
+    .messages {
+      flex: 1; overflow-y: auto; padding: 16px;
+      display: flex; flex-direction: column; gap: 8px;
+      background: #efeae2;
+    }
+    .bubble {
+      max-width: 82%; padding: 8px 12px; border-radius: 12px; font-size: 14px;
+      line-height: 1.45; white-space: pre-wrap; word-wrap: break-word;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.08);
+    }
+    .me { align-self: flex-end; background: #d9fdd3; border-bottom-right-radius: 3px; }
+    .bot { align-self: flex-start; background: #fff; border-bottom-left-radius: 3px; }
+    .bot.escalated { background: #fff4e5; border: 1px solid #ffd8a8; }
+    .rep { align-self: flex-start; background: #e7f0ff; border: 1px solid #cfe0fb; border-bottom-left-radius: 3px; }
+    .rep .who { font-size: 10.5px; color: #1f5fb8; font-weight: 700; margin-bottom: 3px; }
+    .meta { font-size: 10px; color: #8a9a95; margin-top: 4px; text-align: right; }
+
+    /* Quick reply buttons: 4-per-row grid like the mockup */
+    .quick-btns {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;
+      margin-top: 10px; align-self: stretch;
+    }
+    .quick-btns button {
+      background: #fff; color: #075e54; border: 1px solid #cfe3dc; border-radius: 10px;
+      padding: 8px 6px; font-size: 12px; cursor: pointer; text-align: center;
+      display: flex; align-items: center; justify-content: center; gap: 4px; min-height: 40px;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .quick-btns button:hover { background: #e7f3ef; border-color: #128c7e; }
+    .quick-btns button .num { font-weight: 700; opacity: 0.75; }
+    .lang-btn {
+      display: block; width: 100%; margin-top: 8px; padding: 10px 6px;
+      background: #fff; color: #075e54; border: 1px solid #cfe3dc; border-radius: 10px;
+      font-size: 13px; font-weight: 600; cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .lang-btn:hover { background: #e7f3ef; border-color: #128c7e; }
+
+    .navbar { display: flex; gap: 8px; padding: 6px 10px; background: #e9efec; border-top: 1px solid #d7e0db; }
+    .navbar .nav-btn {
+      flex: 1; padding: 8px 6px; background: #fff; color: #075e54;
+      border: 1px solid #cfe3dc; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .navbar .nav-btn:hover { background: #e7f3ef; border-color: #128c7e; }
+
+    .composer { display: flex; padding: 10px; gap: 8px; background: #f0f0f0; align-items: center; }
+    .composer .input-wrap {
+      flex: 1; display: flex; align-items: center; gap: 8px;
+      background: #fff; border-radius: 22px; padding: 6px 12px;
+    }
+    .composer .icon-btn { background: none; border: none; font-size: 20px; cursor: pointer; color: #54656f; padding: 0; line-height: 1; }
+    .composer input[type="text"] { flex: 1; border: none; outline: none; font-size: 14px; background: transparent; }
+    .composer .send {
+      background: #075e54; color: #fff; border: none; border-radius: 50%;
+      width: 46px; height: 46px; font-size: 18px; cursor: pointer; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .composer .send:disabled { opacity: 0.5; cursor: default; }
+    .bubble img.thumb { max-width: 160px; border-radius: 8px; display: block; margin-bottom: 4px; }
+
+    @media (max-width: 760px) {
+      body { padding: 0; }
+      .app { width: 100%; height: 100vh; max-height: none; border-radius: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <a href="/dashboard.html" class="back" title="Rep Dashboard">&larr;</a>
+      <div class="avatar">B</div>
+      <div>
+        <h1>BIS Computer Services <span class="check">&#10004;</span></h1>
+        <div class="sub">AI Sales &amp; Service Assistant 24/7</div>
+      </div>
+      <a href="/dashboard.html" class="menu-dots" title="Rep Dashboard">&#8942;</a>
+    </header>
+
+    <div class="messages" id="messages"></div>
+
+    <div class="navbar" id="navbar">
+      <button type="button" class="nav-btn" id="homeBtn" title="Main menu">&#127968; Menu</button>
+      <button type="button" class="nav-btn" id="backBtn" title="Go back a step">&#9664; Back</button>
+    </div>
+
+    <form class="composer" id="composer">
+      <input type="file" id="fileInput" accept="image/jpeg,image/png,image/jpg" style="display:none" />
+      <div class="input-wrap">
+        <span class="icon-btn" title="Emoji">&#128578;</span>
+        <input type="text" id="text" placeholder="Type a message..." autocomplete="off" />
+        <button type="button" class="icon-btn" id="attach" title="Attach a photo of an item">&#128206;</button>
+        <button type="button" class="icon-btn" id="camera" title="Upload a photo">&#128247;</button>
+      </div>
+      <button type="submit" class="send" id="send">&#10148;</button>
+    </form>
+  </div>
+
+  <script>
+    const messagesEl = document.getElementById('messages');
+    const form = document.getElementById('composer');
+    const textInput = document.getElementById('text');
+    const sendBtn = document.getElementById('send');
+
+    // Auto-generate a stable customer id per browser (like a WhatsApp number).
+    // The customer never sees or manages this - it just identifies the chat.
+    function getCustomerId() {
+      let id = null;
+      try { id = localStorage.getItem('bis_customer_id'); } catch (e) { /* ignore */ }
+      if (!id) {
+        id = 'web_' + Math.random().toString(36).slice(2, 8) + Date.now().toString(36).slice(-4);
+        try { localStorage.setItem('bis_customer_id', id); } catch (e) { /* ignore */ }
+      }
+      return id;
+    }
+    const CUSTOMER_ID = getCustomerId();
+
+    // 8 quick options in a 4-per-row grid (matches the numbered menu + Status).
+    const MENU = [
+      { id: 1, label: 'Components' },
+      { id: 2, label: 'DIY PC' },
+      { id: 3, label: 'Carry-in Service' },
+      { id: 4, label: 'Onsite' },
+      { id: 5, label: 'Availability' },
+      { id: 6, label: 'Talk to Sales' },
+      { id: 7, label: 'Status' },
+      { id: 8, label: 'Warranty' },
+      { id: 9, label: 'About Us' },
+    ];
+
+    function nowTime() {
+      return new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    }
+
+    function addBubble(text, who, opts = {}) {
+      const div = document.createElement('div');
+      div.className = 'bubble ' + who + (opts.escalated ? ' escalated' : '');
+      div.textContent = text;
+      const meta = document.createElement('div');
+      meta.className = 'meta';
+      meta.textContent = (opts.tag ? opts.tag + ' \u00b7 ' : '') + nowTime();
+      div.appendChild(meta);
+      messagesEl.appendChild(div);
+      if (opts.showMenu) renderMenuButtons();
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+    }
+
+    function renderMenuButtons() {
+      const wrap = document.createElement('div');
+      wrap.className = 'quick-btns';
+      for (const m of MENU) {
+        const btn = document.createElement('button');
+        btn.innerHTML = '<span class="num">' + m.id + '</span> ' + m.label;
+        btn.addEventListener('click', () => sendMessage(String(m.id)));
+        wrap.appendChild(btn);
+      }
+      messagesEl.appendChild(wrap);
+
+      // Full-width Language button (un-numbered), below the numbered grid.
+      const langBtn = document.createElement('button');
+      langBtn.className = 'lang-btn';
+      langBtn.innerHTML = '🌐 Language';
+      langBtn.addEventListener('click', () => sendMessage('language'));
+      messagesEl.appendChild(langBtn);
+
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+    }
+
+    async function sendMessage(text) {
+      if (!text.trim()) return;
+      const from = CUSTOMER_ID;
+      addBubble(text, 'me');
+      textInput.value = '';
+      sendBtn.disabled = true;
+      try {
+        const res = await fetch('/webhook', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json; charset=utf-8' },
+          body: JSON.stringify({ from, text }),
+        });
+        const data = await res.json();
+        if (!res.ok) {
+          addBubble('Sorry, something went wrong.', 'bot');
+        } else {
+          const isGreeting = data.greeting || (data.reply && data.reply.includes('Quick options'));
+          const tag = data.escalated
+            ? 'Escalated (' + data.reason + ')'
+            : 'Auto-answer' + (data.aiUsed ? ' (AI)' : '') + (data.language ? ' \u00b7 ' + data.language : '');
+          addBubble(data.reply || '(no reply)', 'bot', { escalated: data.escalated, tag, showMenu: isGreeting });
+        }
+      } catch (err) {
+        addBubble('Network error. Is the server running?', 'bot');
+      } finally {
+        sendBtn.disabled = false;
+        textInput.focus();
+      }
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      sendMessage(textInput.value.trim());
+    });
+
+    // --- Persistent navigation: Home (main menu) and Back (previous step) ---
+    document.getElementById('homeBtn').addEventListener('click', () => sendMessage('0'));
+    document.getElementById('backBtn').addEventListener('click', () => sendMessage('back'));
+
+    // --- Image upload: identify an item from a photo ---
+    const attachBtn = document.getElementById('attach');
+    const cameraBtn = document.getElementById('camera');
+    const fileInput = document.getElementById('fileInput');
+    attachBtn.addEventListener('click', () => fileInput.click());
+    cameraBtn.addEventListener('click', () => fileInput.click());
+    fileInput.addEventListener('change', async () => {
+      const file = fileInput.files && fileInput.files[0];
+      if (!file) return;
+      const from = CUSTOMER_ID;
+      const reader = new FileReader();
+      reader.onload = async () => {
+        const dataUrl = reader.result;
+        // Show the customer's uploaded image as a bubble.
+        const div = document.createElement('div');
+        div.className = 'bubble me';
+        const img = document.createElement('img');
+        img.className = 'thumb';
+        img.src = dataUrl;
+        div.appendChild(img);
+        const meta = document.createElement('div');
+        meta.className = 'meta';
+        meta.textContent = nowTime();
+        div.appendChild(meta);
+        messagesEl.appendChild(div);
+        messagesEl.scrollTop = messagesEl.scrollHeight;
+
+        sendBtn.disabled = true;
+        try {
+          const res = await fetch('/webhook/image', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ from, image: dataUrl, mime: file.type, hint: file.name }),
+          });
+          const data = await res.json();
+          const tag = data.identified ? 'Image match' : 'Image';
+          addBubble(data.reply || '(no reply)', 'bot', { escalated: data.escalated, tag });
+        } catch (err) {
+          addBubble('Could not process the image. Please try again.', 'bot');
+        } finally {
+          sendBtn.disabled = false;
+          fileInput.value = '';
+        }
+      };
+      reader.readAsDataURL(file);
+    });
+
+    // --- Live rep replies: poll for messages a human rep sent from the dashboard ---
+    // A rep replying in the dashboard appears here as a "human" bubble, so the
+    // customer sees the takeover live. Uses textContent (no HTML injection).
+    let lastRepMessageAt = null;
+    function addRepBubble(text, repName, sentAt) {
+      const div = document.createElement('div');
+      div.className = 'bubble rep';
+      const who = document.createElement('div');
+      who.className = 'who';
+      who.textContent = (repName || 'Sales Rep') + ' (human)';
+      div.appendChild(who);
+      div.appendChild(document.createTextNode(text));
+      const meta = document.createElement('div');
+      meta.className = 'meta';
+      meta.textContent = 'Sales team \u00b7 ' + nowTime();
+      div.appendChild(meta);
+      messagesEl.appendChild(div);
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+    }
+    async function pollRepReplies() {
+      try {
+        const since = lastRepMessageAt ? '?since=' + encodeURIComponent(lastRepMessageAt) : '';
+        const res = await fetch('/api/messages/' + encodeURIComponent(CUSTOMER_ID) + since);
+        if (!res.ok) return;
+        const { messages } = await res.json();
+        for (const m of messages || []) {
+          addRepBubble(m.text, m.repName, m.sentAt);
+          lastRepMessageAt = m.sentAt;
+        }
+      } catch (err) { /* ignore transient poll errors */ }
+    }
+    setInterval(pollRepReplies, 4000);
+
+    // On load: send a greeting automatically to show the welcome + menu.
+    sendMessage('hi');
+  </script>
+</body>
+</html>

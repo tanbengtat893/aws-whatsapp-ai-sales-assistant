@@ -1,0 +1,14 @@
+{
+    "version": "v1",
+    "hooks": [
+        {
+            "name": "Run tests on source save",
+            "trigger": "PostFileSave",
+            "matcher": "src[\\\\/].*\\.js$|tests[\\\\/].*\\.js$",
+            "action": {
+                "type": "command",
+                "command": "npm test --silent"
+            }
+        }
+    ]
+}

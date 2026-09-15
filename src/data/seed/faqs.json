@@ -1,0 +1,182 @@
+[
+  {
+    "id": "faq_availability",
+    "intent": "product_availability",
+    "keywords": {
+      "en": ["available", "availability", "in stock", "stock", "have", "got", "sold out", "out of stock"],
+      "ms": ["ada", "stok", "tersedia", "masih ada", "habis", "kehabisan"],
+      "zh": ["有货", "现货", "库存", "有没有", "还有吗", "缺货", "卖完"]
+    },
+    "answers": {
+      "en": "Yes, most items are in stock. Please share the product name or model and we'll confirm current availability for you right away.",
+      "ms": "Ya, kebanyakan barang ada dalam stok. Sila kongsi nama atau model produk dan kami akan sahkan ketersediaannya dengan segera.",
+      "zh": "您好，大部分商品都有现货。请提供产品名称或型号，我们会立即为您确认库存情况。"
+    },
+    "updatedAt": "2026-09-09T00:00:00.000Z"
+  },
+  {
+    "id": "faq_pricing",
+    "intent": "pricing",
+    "keywords": {
+      "en": ["price", "pricing", "cost", "how much", "rate", "quotation", "quote"],
+      "ms": ["harga", "berapa", "kos", "sebut harga", "berapa harga"],
+      "zh": ["价格", "多少钱", "价钱", "报价", "费用"]
+    },
+    "answers": {
+      "en": "Our prices depend on the product and quantity. Tell us which item you're interested in and we'll send you the latest price and any ongoing promotions.",
+      "ms": "Harga kami bergantung pada produk dan kuantiti. Beritahu kami barang yang anda minati dan kami akan hantar harga terkini serta promosi semasa.",
+      "zh": "价格会根据产品和数量而定。请告诉我们您感兴趣的商品，我们会发送最新价格和当前优惠。"
+    },
+    "updatedAt": "2026-09-09T00:00:00.000Z"
+  },
+  {
+    "id": "faq_delivery_charges",
+    "intent": "delivery_charges",
+    "keywords": {
+      "en": ["delivery", "shipping", "postage", "delivery charge", "shipping fee", "courier", "free delivery"],
+      "ms": ["penghantaran", "kos penghantaran", "pos", "caj penghantaran", "kurier", "penghantaran percuma"],
+      "zh": ["运费", "配送", "送货", "邮费", "快递", "免运费"]
+    },
+    "answers": {
+      "en": "Delivery within the city is a flat SGD 5, and free for orders above SGD 80. Outlying areas may vary. Share your postal code for an exact quote.",
+      "ms": "Penghantaran dalam bandar ialah SGD 5 rata, dan percuma untuk pesanan melebihi SGD 80. Kawasan luar mungkin berbeza. Kongsi poskod anda untuk sebut harga tepat.",
+      "zh": "市区配送统一收费 SGD 5，订单满 SGD 80 免运费。偏远地区费用可能不同。请提供您的邮政编码以获取准确报价。"
+    },
+    "updatedAt": "2026-09-09T00:00:00.000Z"
+  },
+  {
+    "id": "faq_operating_hours",
+    "intent": "operating_hours",
+    "keywords": {
+      "en": ["hours", "open", "close", "opening", "operating hours", "when open", "business hours", "what time"],
+      "ms": ["waktu", "buka", "tutup", "waktu operasi", "waktu perniagaan", "pukul berapa"],
+      "zh": ["营业时间", "几点", "开门", "关门", "工作时间", "什么时候开"]
+    },
+    "answers": {
+      "en": "We're open Monday to Sunday, 8am to 8pm. Our office is at 10 Simei Avenue, #10-10, Singapore 640090. WhatsApp enquiries are answered during these hours.",
+      "ms": "Kami buka Isnin hingga Ahad, 8 pagi hingga 8 malam. Pejabat kami di 10 Simei Avenue, #10-10, Singapore 640090. Pertanyaan WhatsApp dijawab dalam waktu ini.",
+      "zh": "我们的营业时间为周一至周日上午 8 点至晚上 8 点。办公地址：10 Simei Avenue, #10-10, Singapore 640090。WhatsApp 咨询将在营业时间内回复。"
+    },
+    "updatedAt": "2026-09-09T00:00:00.000Z"
+  },
+  {
+    "id": "faq_payment_methods",
+    "intent": "payment_methods",
+    "keywords": {
+      "en": ["payment", "pay", "paynow", "credit card", "bank transfer", "cash", "how to pay", "installment"],
+      "ms": ["bayaran", "bayar", "kad kredit", "pindahan bank", "tunai", "cara bayar", "ansuran"],
+      "zh": ["付款", "支付", "信用卡", "银行转账", "现金", "怎么付", "分期"]
+    },
+    "answers": {
+      "en": "We accept PayNow, bank transfer, major credit cards, and cash on collection. Installment plans are available for orders above SGD 300.",
+      "ms": "Kami menerima PayNow, pindahan bank, kad kredit utama, dan tunai semasa pengambilan. Pelan ansuran tersedia untuk pesanan melebihi SGD 300.",
+      "zh": "我们接受 PayNow、银行转账、主要信用卡，以及自取时现金付款。订单满 SGD 300 可申请分期付款。"
+    },
+    "updatedAt": "2026-09-09T00:00:00.000Z"
+  },
+  {
+    "id": "faq_returns_refunds",
+    "intent": "returns_refunds",
+    "keywords": {
+      "en": ["return", "refund", "exchange", "money back", "faulty", "wrong item", "return policy"],
+      "ms": ["pulangan", "bayaran balik", "tukar", "pulang balik", "rosak", "barang salah", "polisi pemulangan"],
+      "zh": ["退货", "退款", "换货", "退钱", "坏了", "错的商品", "退货政策"]
+    },
+    "answers": {
+      "en": "You can return or exchange most items within 7 days with the receipt and original packaging. Faulty items are refunded or replaced at no cost. Share your order number and we'll help.",
+      "ms": "Anda boleh memulangkan atau menukar kebanyakan barang dalam 7 hari dengan resit dan pembungkusan asal. Barang rosak akan dikembalikan wang atau digantikan tanpa kos. Kongsi nombor pesanan anda dan kami akan bantu.",
+      "zh": "大部分商品可在 7 天内凭收据和原包装退换。有质量问题的商品可免费退款或更换。请提供您的订单号，我们将为您处理。"
+    },
+    "updatedAt": "2026-09-09T00:00:00.000Z"
+  },
+  {
+    "id": "faq_warranty",
+    "intent": "warranty",
+    "keywords": {
+      "en": ["warranty", "guarantee", "warranty period", "cover", "repair"],
+      "ms": ["waranti", "jaminan", "tempoh waranti", "perlindungan", "baiki"],
+      "zh": ["保修", "保固", "质保", "保修期", "维修"]
+    },
+    "answers": {
+      "en": "Most products come with a 12-month manufacturer warranty covering defects. Keep your receipt as proof of purchase. Tell us the product and we'll confirm its exact coverage.",
+      "ms": "Kebanyakan produk disertakan dengan waranti pengeluar 12 bulan yang meliputi kecacatan. Simpan resit anda sebagai bukti pembelian. Beritahu kami produk itu dan kami akan sahkan liputannya.",
+      "zh": "大部分产品提供 12 个月的制造商保修，涵盖产品缺陷。请保留收据作为购买凭证。告诉我们产品名称，我们会确认具体保修范围。"
+    },
+    "updatedAt": "2026-09-09T00:00:00.000Z"
+  },
+  {
+    "id": "faq_order_tracking",
+    "intent": "order_tracking",
+    "keywords": {
+      "en": ["track", "tracking", "where is my order", "order status", "delivery status", "shipped"],
+      "ms": ["jejak", "status pesanan", "mana pesanan", "status penghantaran", "dah hantar"],
+      "zh": ["追踪", "订单状态", "我的订单", "物流", "发货了吗", "到哪了"]
+    },
+    "answers": {
+      "en": "To track your order, please share your order number and we'll check its current status and expected delivery date for you.",
+      "ms": "Untuk menjejaki pesanan anda, sila kongsi nombor pesanan dan kami akan semak status semasa serta tarikh penghantaran dijangka.",
+      "zh": "要查询订单，请提供您的订单号，我们会为您查看当前状态和预计送达日期。"
+    },
+    "updatedAt": "2026-09-09T00:00:00.000Z"
+  },
+  {
+    "id": "faq_store_location",
+    "intent": "store_location",
+    "keywords": {
+      "en": ["location", "address", "where", "shop", "store", "outlet", "how to get there", "map"],
+      "ms": ["lokasi", "alamat", "di mana", "kedai", "cawangan", "macam mana nak pergi", "peta"],
+      "zh": ["地址", "位置", "在哪里", "店", "门店", "怎么去", "地图"]
+    },
+    "answers": {
+      "en": "Our store is at 123 Orchard Road, #02-15, Singapore 238888, a short walk from Somerset MRT. We'll gladly send you a map link if you'd like.",
+      "ms": "Kedai kami di 123 Orchard Road, #02-15, Singapore 238888, hanya beberapa langkah dari MRT Somerset. Kami boleh hantar pautan peta jika anda mahu.",
+      "zh": "我们的门店位于 123 Orchard Road, #02-15, Singapore 238888，距离 Somerset 地铁站步行可达。如需地图链接，我们很乐意发送给您。"
+    },
+    "updatedAt": "2026-09-09T00:00:00.000Z"
+  },
+  {
+    "id": "faq_bulk_wholesale",
+    "intent": "bulk_wholesale",
+    "keywords": {
+      "en": ["bulk", "wholesale", "bulk order", "corporate", "large order", "discount for quantity", "reseller"],
+      "ms": ["pukal", "borong", "pesanan pukal", "korporat", "pesanan besar", "diskaun kuantiti", "penjual semula"],
+      "zh": ["批发", "大量", "大宗", "企业采购", "大订单", "数量折扣", "经销商"]
+    },
+    "answers": {
+      "en": "Yes, we offer special pricing for bulk and wholesale orders. Let us know the items and quantities, and our team will prepare a tailored quotation for you.",
+      "ms": "Ya, kami menawarkan harga istimewa untuk pesanan pukal dan borong. Beritahu kami barang dan kuantiti, dan pasukan kami akan sediakan sebut harga khas untuk anda.",
+      "zh": "是的，我们为批发和大宗订单提供特别价格。请告诉我们商品和数量，我们的团队会为您准备专属报价。"
+    },
+    "updatedAt": "2026-09-09T00:00:00.000Z"
+  },
+  {
+    "id": "faq_stock_notification",
+    "intent": "stock_notification",
+    "keywords": {
+      "en": ["notify", "restock", "let me know", "when available", "back in stock", "waiting list"],
+      "ms": ["maklum", "stok semula", "beritahu saya", "bila ada", "ada semula", "senarai menunggu"],
+      "zh": ["通知", "补货", "有货通知", "什么时候有", "到货", "等候名单"]
+    },
+    "answers": {
+      "en": "If an item is out of stock, we can notify you as soon as it's back. Share the product name and your preferred contact, and we'll add you to the notify list.",
+      "ms": "Jika sesuatu barang kehabisan stok, kami boleh maklumkan anda sebaik sahaja ia tersedia semula. Kongsi nama produk dan cara hubungan pilihan anda.",
+      "zh": "如果商品缺货，我们可以在补货后第一时间通知您。请提供产品名称和您方便的联系方式，我们会将您加入通知名单。"
+    },
+    "updatedAt": "2026-09-09T00:00:00.000Z"
+  },
+  {
+    "id": "faq_talk_to_human",
+    "intent": "human_handoff",
+    "keywords": {
+      "en": ["talk to a person", "speak to someone", "human", "agent", "real person", "representative", "customer service"],
+      "ms": ["cakap dengan orang", "bercakap dengan seseorang", "manusia", "ejen", "orang sebenar", "wakil", "khidmat pelanggan"],
+      "zh": ["找人工", "真人", "客服", "人工服务", "转人工", "跟人说话"]
+    },
+    "answers": {
+      "en": "Of course. I'm connecting you with one of our sales representatives who will follow up with you shortly. Thank you for your patience.",
+      "ms": "Sudah tentu. Saya sedang menghubungkan anda dengan salah seorang wakil jualan kami yang akan menghubungi anda sebentar lagi. Terima kasih atas kesabaran anda.",
+      "zh": "当然可以。我正在为您转接销售代表，他们会尽快与您联系。感谢您的耐心等待。"
+    },
+    "updatedAt": "2026-09-09T00:00:00.000Z"
+  }
+]
