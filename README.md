@@ -4,7 +4,24 @@ A hybrid assistant that receives customer WhatsApp enquiries, detects the langua
 (English, Bahasa Melayu, Chinese), auto-answers frequently asked questions in that
 language, and escalates anything uncertain to a human rep.
 
-See the full spec in `../.kiro/specs/whatsapp-sales-enquiries/`.
+See the full spec in `.kiro/specs/whatsapp-sales-enquiries/`.
+
+## Live demo & evidence (for reviewers)
+
+Deployed and running on an AWS **Ubuntu** (Lightsail) instance, with AI reasoning via the **OpenClaw** gateway, built using the **Kiro** IDE (spec-driven).
+
+- **Customer chat:** http://52.77.234.193:3000/chat.html
+- **Rep dashboard:** http://52.77.234.193:3000/dashboard.html
+- **Health check:** http://52.77.234.193:3000/health
+
+Supporting material in this repo:
+- **Main report:** `docs/COMPETITION_REPORT.md`
+- **OpenClaw / Ubuntu setup & verification:** `OPENCLAW_SETUP.md`
+- **Deployment steps:** `DEPLOY.md`
+- **Screenshots (visual evidence):** `screenshots/evidence/`
+- **Kiro spec-driven build:** `.kiro/specs/`, `.kiro/steering/`, `.kiro/hooks/`
+
+> WhatsApp and payment run in **simulated** mode for the demo (secure test gateway — no CVV, no bank link, no real charge).
 
 ## Getting started
 
