@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#075E54"/>
+      <stop offset="0.55" stop-color="#128C7E"/>
+      <stop offset="1" stop-color="#25D366"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ECE5DD"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- faint chat-bubble pattern -->
+  <g opacity="0.06" fill="#ffffff">
+    <circle cx="120" cy="120" r="70"/>
+    <circle cx="1150" cy="600" r="90"/>
+    <circle cx="1050" cy="120" r="46"/>
+    <circle cx="180" cy="620" r="56"/>
+  </g>
+
+  <!-- LEFT: text block -->
+  <g>
+    <!-- eyebrow / powered by -->
+    <text x="80" y="118" fill="#DFF7EC" font-size="26" font-weight="600" letter-spacing="2">
+      AWS LIGHTSAIL · KIRO · OPENCLAW
+    </text>
+
+    <!-- Title -->
+    <text x="78" y="220" fill="#ffffff" font-size="92" font-weight="800">WhatsApp AI</text>
+    <text x="78" y="310" fill="#ffffff" font-size="92" font-weight="800">Sales &amp; Service</text>
+    <text x="80" y="384" fill="#FFE066" font-size="66" font-weight="800">Assistant</text>
+
+    <!-- value line -->
+    <text x="82" y="452" fill="#EAFff5" font-size="36" font-weight="600">
+      Reduce manpower. Increase sales.
+    </text>
+
+    <!-- proof chips -->
+    <g font-size="27" font-weight="700">
+      <rect x="80" y="500" rx="26" ry="26" width="250" height="52" fill="#ffffff" opacity="0.15"/>
+      <text x="106" y="535" fill="#ffffff">24/7 · 3 languages</text>
+
+      <rect x="346" y="500" rx="26" ry="26" width="232" height="52" fill="#ffffff" opacity="0.15"/>
+      <text x="372" y="535" fill="#ffffff">Human-in-loop</text>
+
+      <rect x="80" y="566" rx="26" ry="26" width="300" height="52" fill="#ffffff" opacity="0.15"/>
+      <text x="106" y="601" fill="#ffffff">Live demo on AWS</text>
+    </g>
+
+    <!-- company -->
+    <text x="82" y="672" fill="#CDEFE0" font-size="26" font-weight="600">
+      BIS Computer Services · Team ITE BIS Innovators
+    </text>
+  </g>
+
+  <!-- RIGHT: stylised phone with chat -->
+  <g filter="url(#soft)">
+    <!-- phone body -->
+    <rect x="905" y="70" rx="46" ry="46" width="320" height="580" fill="#0b3d38"/>
+    <rect x="921" y="86" rx="34" ry="34" width="288" height="548" fill="url(#phone)"/>
+
+    <!-- WhatsApp top bar -->
+    <path d="M921 120 a34 34 0 0 1 34 -34 h220 a34 34 0 0 1 34 34 v40 h-288 z" fill="#075E54"/>
+    <circle cx="960" cy="140" r="18" fill="#25D366"/>
+    <text x="990" y="148" fill="#ffffff" font-size="22" font-weight="700">BIS Assistant</text>
+    <text x="990" y="170" fill="#Bfeadd" font-size="14">online</text>
+
+    <!-- incoming bubble -->
+    <g>
+      <rect x="945" y="210" rx="16" ry="16" width="200" height="70" fill="#ffffff"/>
+      <text x="963" y="240" fill="#111111" font-size="18">How much is a</text>
+      <text x="963" y="264" fill="#111111" font-size="18">keyboard?</text>
+    </g>
+
+    <!-- bot reply bubble -->
+    <g>
+      <rect x="985" y="300" rx="16" ry="16" width="200" height="118" fill="#DCF8C6"/>
+      <text x="1003" y="330" fill="#111111" font-size="17" font-weight="700">Logitech K380</text>
+      <text x="1003" y="356" fill="#111111" font-size="17">SGD 39.00</text>
+      <text x="1003" y="382" fill="#128C7E" font-size="16" font-weight="700">100 in stock</text>
+      <text x="1003" y="406" fill="#555555" font-size="14">Reply 1 to buy</text>
+    </g>
+
+    <!-- menu bubble -->
+    <g>
+      <rect x="945" y="438" rx="16" ry="16" width="210" height="150" fill="#ffffff"/>
+      <text x="963" y="466" fill="#111111" font-size="15">1 Components</text>
+      <text x="963" y="490" fill="#111111" font-size="15">2 DIY PC · 5 Availability</text>
+      <text x="963" y="514" fill="#111111" font-size="15">6 Talk to Sales</text>
+      <text x="963" y="538" fill="#111111" font-size="15">7 Delivery · 8 Warranty</text>
+      <text x="963" y="566" fill="#128C7E" font-size="15" font-weight="700">EN · 中文 · BM</text>
+    </g>
+
+    <!-- input bar -->
+    <rect x="937" y="600" rx="20" ry="20" width="256" height="34" fill="#ffffff"/>
+    <circle cx="1176" cy="617" r="18" fill="#25D366"/>
+  </g>
+
+  <!-- PLAY badge to signal a video -->
+  <g filter="url(#soft)">
+    <circle cx="700" cy="600" r="58" fill="#FF0000"/>
+    <path d="M682 572 L682 628 L730 600 Z" fill="#ffffff"/>
+  </g>
+  <text x="620" y="690" fill="#ffffff" font-size="24" font-weight="700">WATCH THE DEMO</text>
+</svg>
